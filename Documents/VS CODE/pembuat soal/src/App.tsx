@@ -8,6 +8,10 @@ import { PreOrderModal } from './components/features/PreOrder/PreOrderModal';
 import { LiveMusicSection } from './components/features/Events/LiveMusicSection';
 
 
+import { ReviewsSection } from './components/features/SocialProof/ReviewsSection';
+import { InstagramSection } from './components/features/SocialProof/InstagramSection';
+import { WhyDomcySection } from './components/features/WhyDomcy/WhyDomcySection';
+
 function App() {
   return (
     <CartProvider>
@@ -16,6 +20,9 @@ function App() {
         <Hero />
         <MenuSection />
         <LiveMusicSection />
+        <ReviewsSection />
+        <InstagramSection />
+        <WhyDomcySection />
         <Locations />
         <FloatingOrderButton />
         <PreOrderModal />

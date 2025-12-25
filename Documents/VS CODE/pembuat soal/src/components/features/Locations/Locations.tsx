@@ -52,25 +52,24 @@ export const Locations = () => {
                         </div>
 
                     </div>
-                </div>
 
-                {/* Right: Dark Map */}
-                <div className="w-full lg:w-2/3 min-h-[500px] h-auto bg-domcy-green/20 border-2 border-domcy-cream/10 relative overflow-hidden group">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15792.85532297136!2d112.4287532!3d-8.2816987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78a2e58e08d6b9%3A0x7d6c6e759238380!2sDonomulyo%2C%20Malang%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1709620000000!5m2!1sen!2sid"
-                        width="100%"
-                        height="100%"
-                        className="absolute inset-0 grayscale invert-[.85] contrast-[1.1] opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        loading="lazy"
-                    ></iframe>
-                    {/* Overlay to tint the map green */}
-                    <div className="absolute inset-0 bg-domcy-green/30 pointer-events-none mix-blend-overlay"></div>
-                </div>
+                    {/* Right: Dark Map */}
+                    <div className="w-full lg:w-2/3 min-h-[500px] h-auto bg-domcy-green/20 border-2 border-domcy-cream/10 relative overflow-hidden group">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15792.85532297136!2d112.4287532!3d-8.2816987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78a2e58e08d6b9%3A0x7d6c6e759238380!2sDonomulyo%2C%20Malang%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1709620000000!5m2!1sen!2sid"
+                            width="100%"
+                            height="100%"
+                            className="absolute inset-0 grayscale invert-[.85] contrast-[1.1] opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            loading="lazy"
+                        ></iframe>
+                        {/* Overlay to tint the map green */}
+                        <div className="absolute inset-0 bg-domcy-green/30 pointer-events-none mix-blend-overlay"></div>
+                    </div>
 
+                </div>
             </div>
-        </div>
         </section >
     );
 };
