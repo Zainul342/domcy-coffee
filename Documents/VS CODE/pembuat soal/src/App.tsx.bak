@@ -1,0 +1,17 @@
+import { Layout } from './components/layout/Layout';
+import { Hero } from './components/layout/Hero';
+import { MenuSection } from './components/features/Menu/MenuSection';
+import { Locations } from './components/features/Locations/Locations';
+
+function App() {
+  return (
+    <Layout>
+      <Hero />
+      <MenuSection />
+      <Locations />
+      {/* Sections for Reservation, etc. will go here */}
+    </Layout>
+  );
+}
+
+export default App;
