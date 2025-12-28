@@ -1,0 +1,45 @@
+Kitchen Open
+4
+Items
+[0] (84,92)<a class='flex items-center gap-2 group' href='/' />
+	[1] (47,92)<div  />
+		[2] (47,92)<canvas  />
+	[3] (103,92)<span >domcy />
+		[4] (132,103)<span >® />
+[5] (442,92)<button class='font-display text-base uppercase tracking-wider text-domcy-green border border-transparent hover:border-domcy-green rounded-full px-5 py-2 transition-all'>Live Music />
+[6] (529,92)<a class='font-display text-base uppercase tracking-wider text-domcy-green border border-transparent hover:border-domcy-green rounded-full px-5 py-2 transition-all' href='/locations'>Find Us />
+[7] (874,92)<button class='relative font-display text-xs sm:text-base uppercase tracking-wider bg-domcy-green text-domcy-cream rounded-xl px-4 py-2 sm:px-6 sm:py-2.5 hover:bg-domcy-black hover:scale-105 transition-all shadow-lg'>Order Now />
+	[8] (917,65)<span >4 />
+[9] (950,92)<button class='bg-transparent text-domcy-green p-2 hover:scale-110 transition-transform flex flex-col justify-center items-center gap-[6px]' />
+	[10] (950,85)<div  />
+	[11] (950,99)<div  />
+Domcy Special
+Coffee
+Non-Coffee
+Signature
+Domcy Special
+[12] (500,511)<div  />
+	[13] (500,462)<div  />
+		[14] (405,449)<div  />
+			[15] (244,449)<h3 >Nasi Tempong Ayam />
+				[16] (355,449)<span >Best Seller />
+				[17] (424,449)<span >Spicy 🌶️ />
+		[18] (867,482)<div  />
+			[19] (809,482)<div  />
+			[20] (889,482)<span >15.000 />
+			[21] (947,482)<button class='w-10 h-10 rounded-full flex items-center justify-center border-2 border-domcy-cream/20 hover:border-domcy-accent hover:bg-domcy-accent hover:text-domcy-green transition-all ' />
+	[22] (500,571)<div  />
+		[23] (238,571)<p >Sensasi pedas yang "nendang", sambal segar ulek dadakan, dipadukan ayam goreng gurih & lalapan fresh. />
+[24] (500,798)<div  />
+	[25] (500,750)<div  />
+		[26] (405,736)<div  />
+			[27] (259,736)<h3 >Ayam Geprek Original />
+				[28] (383,736)<span >Best Seller />
+				[29] (453,736)<span >Spicy 🌶️ />
+		[30] (867,770)<div  />
+			[31] (809,770)<div  />
+			[32] (889,770)<span >13.000 />
+			[33] (947,770)<button class='w-10 h-10 rounded-full flex items-center justify-center border-2 border-domcy-cream/20 hover:border-domcy-accent hover:bg-domcy-accent hover:text-domcy-green transition-all ' />
+	[34] (500,859)<div  />
+		[35] (238,859)<p >Ayam crispy di luar lembut di dalam, digeprek dengan sambal bawang super pedas yang bikin merem melek. />
+Ayam Geprek Sambal Matah
