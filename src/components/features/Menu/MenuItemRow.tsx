@@ -54,28 +54,28 @@ export const MenuItemRow = ({ id, name, description, price, image, isSoldOut, st
                     <h3 className="font-display text-3xl sm:text-5xl uppercase text-domcy-cream group-hover:text-white transition-colors flex items-center gap-3 flex-wrap">
                         {name}
                         {isFeatured && (
-                            <span className="bg-domcy-amber text-black text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-sm uppercase tracking-wider shrink-0 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                            <span className="bg-domcy-amber text-black text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-none uppercase tracking-wider shrink-0 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                                 Best Seller
                             </span>
                         )}
                         {tags.includes('spicy') && (
-                            <span className="bg-red-500 text-white text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-sm uppercase tracking-wider shrink-0">
+                            <span className="bg-red-500 text-white text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-none uppercase tracking-wider shrink-0">
                                 Spicy 🌶️
                             </span>
                         )}
                         {tags.includes('vegan') && (
-                            <span className="bg-green-500 text-white text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-sm uppercase tracking-wider shrink-0">
+                            <span className="bg-green-500 text-white text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-none uppercase tracking-wider shrink-0">
                                 Vegan 🌱
                             </span>
                         )}
                         {effectiveStatus === 'limited' && (
-                            <span className="bg-yellow-500 text-black text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-sm uppercase tracking-wider shrink-0 shadow-sm">
+                            <span className="bg-yellow-500 text-black text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-none uppercase tracking-wider shrink-0 shadow-sm">
                                 Limited
                             </span>
                         )}
                     </h3>
                     {isItemSoldOut && (
-                        <span className="bg-red-600 text-white text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-sm uppercase tracking-wider shrink-0">
+                        <span className="bg-red-600 text-white text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-none uppercase tracking-wider shrink-0">
                             Sold Out
                         </span>
                     )}
@@ -88,7 +88,8 @@ export const MenuItemRow = ({ id, name, description, price, image, isSoldOut, st
 
                     {/* Add Button */}
                     <button
-                        className={`w-10 h-10 rounded-lg flex items-center justify-center border-2 border-domcy-cream/20 hover:border-domcy-accent hover:bg-domcy-accent hover:text-domcy-green transition-all ${isSoldOut ? 'opacity-20 cursor-not-allowed' : ''}`}
+                        data-testid={`add-to-cart-${id}`}
+                        className={`w-10 h-10 rounded-none flex items-center justify-center border-2 border-domcy-cream/20 hover:border-domcy-accent hover:bg-domcy-accent hover:text-domcy-green transition-all ${isSoldOut ? 'opacity-20 cursor-not-allowed' : ''}`}
                         disabled={isSoldOut}
                     >
                         <Plus className="w-5 h-5" />
@@ -102,7 +103,7 @@ export const MenuItemRow = ({ id, name, description, price, image, isSoldOut, st
                 </p>
                 {/* Mobile Image */}
                 {image && (
-                    <div className="lg:hidden mt-2 w-20 h-20 rounded-md overflow-hidden border border-domcy-cream/20 shrink-0 ml-4">
+                    <div className="lg:hidden mt-2 w-20 h-20 rounded-none overflow-hidden border border-domcy-cream/20 shrink-0 ml-4">
                         <img src={image} alt={name} className="w-full h-full object-cover" loading="lazy" />
                     </div>
                 )}
@@ -117,7 +118,8 @@ export const MenuItemRow = ({ id, name, description, price, image, isSoldOut, st
                         opacity: isHovered ? 1 : 0,
                         scale: isHovered ? 1 : 0.8,
                         rotate: isHovered ? 5 : -5,
-                        left: '80%', // Moved further right as per feedback
+                        left: 'auto',
+                        right: '0%',
                         top: '50%'
                     }}
                     transition={{ duration: 0.3, ease: "backOut" }}

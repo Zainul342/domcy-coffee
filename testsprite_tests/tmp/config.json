@@ -6,11 +6,23 @@
   "executionArgs": {
     "projectName": "domcy-coffee",
     "projectPath": "c:\\Users\\User\\Documents\\VS CODE\\domcy-coffee",
-    "testIds": [],
-    "additionalInstruction": "Test the menu items, adding to cart, and the checkout process flow. Ensure animations from framer-motion don't block interactions.",
+    "testIds": [
+      "ec634f15-de19-46d3-9437-3812c274fda7",
+      "2031b6a4-0331-45f3-b1e2-a8556da379dd",
+      "bc576049-7e68-4c52-b377-583e1b3528e4",
+      "dbf115ae-c575-4339-b81f-b272f1e016a0",
+      "8061d673-75e0-44c8-8aa8-7ba853c54583",
+      "f5314f81-d3aa-4d5b-99a6-4c2a41de6e69",
+      "c717b32b-1dbb-4817-8e40-d8d2efeca831",
+      "b7d3efdc-d915-4adf-a3a5-a5cd758148bb",
+      "7221da94-8c80-4579-a504-8aa7b661383f",
+      "cd348417-a1a6-4d85-b1c4-38fe2b658f6f",
+      "c25500bb-14de-4ecb-b85a-ee608984021e"
+    ],
+    "additionalInstruction": "Regenerate these tests to use the new selectors and correct logic:\n1. Use `data-testid='add-to-cart-{id}'` (e.g. `add-to-cart-1`) to find add buttons.\n2. TC002 (Add Item): Verify cart state (badge count or cart drawer items) UPDATE, NOT 'Order Confirmation'.\n3. TC005/TC006 (Order): Flow is Add Item -> Open Cart -> Click 'Checkout' (data-testid='checkout-button') -> Fill Form -> Click 'Confirm via WhatsApp' (data-testid='confirm-whatsapp-button').\n4. TC009 (Map): Check for `.leaflet-container` or `Leaflet Map` text presence.",
     "envs": {
       "API_KEY": "sk-user-Ph_OszVLi--d_IEfLJhzO-Ovgp6GkC-lIhlJA74vy3OosJ_mw9fQT6NALxmjtN37nXfsT2pPZsrZUq5EOaynFGbyqu5xBLPGfvE1dTEQcI2T-e6cF0ykbycwco7N2oua09I"
     }
   },
-  "proxy": "http://b1de4b74-b8eb-44de-af9e-73950bc70422:8nAIj07ekR6ccGrbwcT6UJESAEZoyuHE@tun.testsprite.com:8080"
+  "proxy": "http://bf143bba-87af-49a4-8a00-3f0d5e649218:kLqKdz0rPLSJjAXYTjmX7aza5aq0mARI@tun.testsprite.com:8080"
 }

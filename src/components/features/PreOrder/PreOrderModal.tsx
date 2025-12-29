@@ -277,6 +277,7 @@ export const PreOrderModal = () => {
                                             </div>
                                             <button
                                                 onClick={handleCheckout}
+                                                data-testid="checkout-button"
                                                 className="bg-domcy-amber text-domcy-black font-display text-xl uppercase tracking-wider px-6 py-3 rounded-xl hover:bg-white hover:text-domcy-green transition-colors shadow-lg flex items-center gap-2"
                                             >
                                                 Checkout <ArrowRight className="w-5 h-5" />
@@ -294,6 +295,7 @@ export const PreOrderModal = () => {
                                         </button>
                                         <button
                                             onClick={handleSendOrder}
+                                            data-testid="confirm-whatsapp-button"
                                             className="flex-[2] bg-[#25D366] text-white font-display text-lg uppercase tracking-wider px-4 py-3 rounded-xl hover:bg-[#128C7E] transition-colors shadow-lg flex items-center justify-center gap-2"
                                         >
                                             Confirm via WhatsApp
