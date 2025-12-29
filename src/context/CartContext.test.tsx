@@ -8,6 +8,10 @@ const wrapper = ({ children }: { children: React.ReactNode }) => (
 );
 
 describe('CartContext', () => {
+    beforeEach(() => {
+        window.localStorage.clear();
+    });
+
     it('should initialize with an empty cart', () => {
         const { result } = renderHook(() => useCart(), { wrapper });
         expect(result.current.items).toEqual([]);
