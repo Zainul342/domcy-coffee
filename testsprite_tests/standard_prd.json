@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "project": "Domcy Coffee Online Ordering",
+    "date": "2025-12-22",
+    "prepared_by": "Software Development Manager"
+  },
+  "product_overview": "Domcy Coffee Online Ordering is a responsive web application that allows customers to browse a curated menu of coffee products, add them to a shopping cart, and place orders to be finalized via WhatsApp. The app features an animated and interactive user interface, seamless navigation, and an integrated location map for store information.",
+  "core_goals": [
+    "Provide customers an intuitive and engaging way to browse coffee products and view detailed descriptions and prices.",
+    "Enable easy state management for shopping cart operations including adding, removing, and updating coffee orders.",
+    "Ensure a smooth ordering flow culminating in order confirmation and directing customers to WhatsApp for finalization.",
+    "Create a responsive navigation experience that works well on both desktop and mobile devices.",
+    "Display the physical store location interactively on a map for customer convenience."
+  ],
+  "key_features": [
+    "Shopping Cart System with React Context to manage coffee orders, including add, remove, and quantity update functionalities.",
+    "Menu Display presenting coffee items with prices, descriptions, and interactive 'add to cart' buttons.",
+    "Animated UI Components utilizing Framer Motion for smooth floating images and entry animations to enhance user engagement.",
+    "Responsive Navigation comprising a navigation bar and mobile-optimized floating menu for accessing site sections.",
+    "Order Process flow featuring a modal for pre-order confirmation and integration with WhatsApp for completing the order.",
+    "Location Map integration using React Leaflet showing the Domcy Coffee store location interactively."
+  ],
+  "user_flow_summary": [
+    "User lands on the homepage and views the coffee menu with item details and 'add to cart' buttons.",
+    "User selects coffee items and quantities, managing the shopping cart dynamically via context state.",
+    "User accesses the cart and proceeds to order, triggering a PreOrderModal to review order details.",
+    "Upon order confirmation, user is directed to WhatsApp to finalize the order.",
+    "User navigates the site using the top navigation bar or mobile floating menu to explore sections including the location map showing the store.",
+    "User can interact with animated UI elements enhancing the browsing experience."
+  ],
+  "validation_criteria": [
+    "Shopping cart correctly reflects added, removed, and quantity-updated items in the UI and state.",
+    "Menu items display accurate prices, descriptions, and respond correctly to 'add to cart' interactions.",
+    "Animations function smoothly on supported devices without performance degradation.",
+    "Navigation components are fully responsive and transitions work correctly on desktop and mobile views.",
+    "Order process correctly captures order details and opens WhatsApp with prefilled messages for finalization.",
+    "Location map accurately displays store location and allows user interaction such as zoom and pan."
+  ],
+  "code_summary": {
+    "tech_stack": [
+      "TypeScript",
+      "React 19",
+      "Vite",
+      "TailwindCSS",
+      "Framer Motion",
+      "Lucide React",
+      "React Leaflet",
+      "React Router DOM"
+    ],
+    "features": [
+      {
+        "name": "Shopping Cart System",
+        "description": "State management for coffee orders, including add, remove, and quantity updates using React Context.",
+        "files": [
+          "src/context/CartContext.tsx",
+          "src/context/CartContext.test.tsx"
+        ]
+      },
+      {
+        "name": "Menu Display",
+        "description": "Renders a list of coffee items with prices, descriptions, and interactive 'add to cart' buttons.",
+        "files": [
+          "src/components/features/Menu/MenuItemRow.tsx",
+          "src/components/features/Menu/MenuItemRow.test.tsx"
+        ]
+      },
+      {
+        "name": "Animated UI Components",
+        "description": "Smooth 3D-like floating images and entry animations for menu items using Framer Motion.",
+        "files": [
+          "src/components/ui/FloatingImage.tsx",
+          "src/components/ui/FloatingOrderButton.tsx"
+        ]
+      },
+      {
+        "name": "Responsive Navigation",
+        "description": "Navigation bar and mobile floating menu for easy access to sections of the site.",
+        "files": [
+          "src/components/layout/Navbar.tsx",
+          "src/components/ui/MobileFloatingNav.tsx"
+        ]
+      },
+      {
+        "name": "Order Process",
+        "description": "Flow to confirm order details and proceed to WhatsApp for finalization.",
+        "files": [
+          "src/components/features/Order/PreOrderModal.tsx"
+        ]
+      },
+      {
+        "name": "Location Map",
+        "description": "Interactive map showing Domcy Coffee store location using Leaflet.",
+        "files": [
+          "src/components/features/Location/LocationMap.tsx"
+        ]
+      }
+    ]
+  }
+}
