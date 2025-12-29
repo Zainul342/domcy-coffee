@@ -18,18 +18,18 @@ export const Hero = () => {
             {/* MAIN TYPOGRAPHY - Coded SVG Logo */}
             <div className="container mx-auto px-4 relative z-10 h-full flex flex-col items-center justify-center">
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
                     className="relative w-full flex flex-col items-center justify-center text-center -mt-5 sm:-mt-32"
                 >
                     <div className="relative z-10 w-[95vw] max-w-[900px] mx-auto">
                         <DomcyLogo className="w-full h-auto" />
                     </div>
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5, duration: 0.8 }}
+                        transition={{ delay: 0.2, duration: 0.6, type: "spring", stiffness: 100 }}
                         className="font-sans text-domcy-cream text-[3vw] sm:text-[1.5vw] md:text-xl font-bold tracking-[0.2em] uppercase mt-6 md:mt-8 relative z-30 opacity-90"
                     >
                         Satu-Satunya Cafe Terbaik di Donomulyo
