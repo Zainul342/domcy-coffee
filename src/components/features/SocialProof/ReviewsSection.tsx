@@ -19,14 +19,19 @@ export const ReviewsSection = () => {
                             <Star className="w-6 h-6 fill-current" />
                             <Star className="w-6 h-6 fill-current" />
                             <Star className="w-6 h-6 fill-current" />
-                            <Star className="w-6 h-6 fill-current" />
-                            <span className="text-domcy-green font-bold ml-2 text-lg">4.8/5.0</span>
+                            <div className="relative">
+                                <Star className="w-6 h-6 text-domcy-green/20 fill-current" />
+                                <div className="absolute top-0 left-0 overflow-hidden w-[50%]">
+                                    <Star className="w-6 h-6 fill-current" />
+                                </div>
+                            </div>
+                            <span className="text-domcy-green font-bold ml-2 text-lg uppercase tracking-wider border-b-2 border-domcy-amber">Favorit Warga</span>
                         </div>
                         <h2 className="font-display text-5xl md:text-6xl uppercase leading-none mb-4">
                             Warga Domcy <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-domcy-green to-domcy-lightGreen">Approved</span>
                         </h2>
                         <p className="font-sans text-xl opacity-80 max-w-md">
-                            Join hundreds of students and locals who make Domcy their daily go-to spot.
+                            Gabung bersama ratusan anak muda dan warga Donomulyo yang menjadikan Domcy tempat nongkrong favorit setiap hari.
                         </p>
                     </div>
 
@@ -36,7 +41,7 @@ export const ReviewsSection = () => {
                                 <Users className="w-6 h-6 text-domcy-amber" />
                                 <span className="font-display text-3xl">500+</span>
                             </div>
-                            <p className="text-sm font-sans font-bold uppercase tracking-wider opacity-60">Happy Faces</p>
+                            <p className="text-sm font-sans font-bold uppercase tracking-wider opacity-60">Pelanggan Puas</p>
                         </div>
                         <div className="w-px h-12 bg-domcy-green/10"></div>
                         <div className="text-center">
@@ -44,7 +49,7 @@ export const ReviewsSection = () => {
                                 <Quote className="w-6 h-6 text-domcy-amber" />
                                 <span className="font-display text-3xl">120+</span>
                             </div>
-                            <p className="text-sm font-sans font-bold uppercase tracking-wider opacity-60">5-Star Reviews</p>
+                            <p className="text-sm font-sans font-bold uppercase tracking-wider opacity-60">Warga Puas</p>
                         </div>
                     </div>
                 </div>
@@ -66,12 +71,12 @@ export const ReviewsSection = () => {
 
                 <div className="mt-12 text-center">
                     <a
-                        href="https://maps.app.goo.gl/WDyBY36Frhec2BGdA"
+                        href="https://maps.app.goo.gl/tm2NoKdLcGNuB6Gg9"
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center justify-center gap-2 font-display text-xl uppercase tracking-wider border-b-2 border-domcy-green hover:text-domcy-amber hover:border-domcy-amber transition-colors pb-1"
                     >
-                        Read all reviews on Google Maps
+                        Baca semua ulasan di Google Maps
                     </a>
                 </div>
 

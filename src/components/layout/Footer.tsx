@@ -15,13 +15,13 @@ export const Footer = () => {
 
                         {/* Line 1: Filled */}
                         <div className="font-display text-[15vw] md:text-[8vw] text-domcy-cream uppercase tracking-tight whitespace-nowrap">
-                            Authentic Coffee
+                            Kopi Nikmat
                         </div>
 
                         {/* Line 2: Outlined */}
                         <div className="font-display text-[15vw] md:text-[8vw] text-transparent uppercase tracking-tight whitespace-nowrap"
                             style={{ WebkitTextStroke: '2px #F2F0E9' }}>
-                            Spicy Sambal
+                            Sambal Nampol
                         </div>
 
                         {/* Line 3: Filled */}
@@ -49,8 +49,8 @@ export const Footer = () => {
 
                     {/* Block 1: Opening Times */}
                     <div className="p-6 border-b md:border-b-0 md:border-r border-domcy-green/20 flex flex-col items-center justify-center hover:bg-domcy-green/5 transition-colors group cursor-default">
-                        <span className="font-display text-2xl uppercase mb-1 group-hover:scale-105 transition-transform">Opening Times</span>
-                        <span className="font-sans text-xs font-bold uppercase tracking-wider opacity-60">Daily 10:00 - 23:00</span>
+                        <span className="font-display text-2xl uppercase mb-1 group-hover:scale-105 transition-transform">Jam Buka</span>
+                        <span className="font-sans text-xs font-bold uppercase tracking-wider opacity-60">Setiap Hari 10:00 - 23:00</span>
                     </div>
 
                     {/* Block 2: Order Now */}
@@ -58,8 +58,8 @@ export const Footer = () => {
                         onClick={openCart}
                         className="p-6 border-b md:border-b-0 md:border-r border-domcy-green/20 flex flex-col items-center justify-center hover:bg-domcy-green hover:text-domcy-cream transition-colors group"
                     >
-                        <span className="font-display text-2xl uppercase mb-1 group-hover:scale-110 transition-transform">Order Now</span>
-                        <span className="font-sans text-xs font-bold uppercase tracking-wider opacity-60 group-hover:opacity-80">Pickup & Delivery</span>
+                        <span className="font-display text-2xl uppercase mb-1 group-hover:scale-110 transition-transform">Pesan Sekarang</span>
+                        <span className="font-sans text-xs font-bold uppercase tracking-wider opacity-60 group-hover:opacity-80">Ambil & Delivery</span>
                     </button>
 
                     {/* Block 3: Find Us */}
@@ -67,7 +67,7 @@ export const Footer = () => {
                         to="/locations"
                         className="p-6 flex flex-col items-center justify-center hover:bg-domcy-green hover:text-domcy-cream transition-colors group"
                     >
-                        <span className="font-display text-2xl uppercase mb-1 group-hover:scale-105 transition-transform">Find Us</span>
+                        <span className="font-display text-2xl uppercase mb-1 group-hover:scale-105 transition-transform">Lokasi Kami</span>
                         <span className="font-sans text-xs font-bold uppercase tracking-wider opacity-60 group-hover:opacity-80">Dawung, Donomulyo</span>
                     </Link>
 

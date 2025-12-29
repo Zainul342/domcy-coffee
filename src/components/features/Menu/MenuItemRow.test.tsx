@@ -2,7 +2,6 @@ import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MenuItemRow } from './MenuItemRow';
 import { CartProvider } from '../../../context/CartContext';
-import React from 'react';
 
 // Mock FloatingImage as it might have complex animations or dependencies
 vi.mock('../../ui/FloatingImage', () => ({

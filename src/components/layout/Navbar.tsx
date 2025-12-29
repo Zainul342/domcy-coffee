@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Instagram, ExternalLink, Menu } from 'lucide-react';
+import { X, Instagram } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import { DomcyLogo } from '../ui/DomcyLogo';
@@ -25,10 +25,12 @@ export const Navbar = () => {
         if (location.pathname !== '/') {
             navigate(`/?scrollTo=${sectionId}`);
         } else {
-            const element = document.getElementById(sectionId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
         }
     };
 
@@ -59,7 +61,7 @@ export const Navbar = () => {
         <>
             {/* Navbar Container - Floating Pill */}
             <div className="fixed top-4 left-0 right-0 z-[60] flex justify-center px-4">
-                <nav className="w-full max-w-[1400px] bg-domcy-cream text-domcy-green rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-4 py-3 sm:px-6 sm:py-4 flex justify-between items-center transition-all duration-300">
+                <nav className={`w-full max-w-[1400px] ${scrolled ? 'bg-domcy-cream/90 backdrop-blur-md' : 'bg-domcy-cream'} text-domcy-green rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-4 py-3 sm:px-6 sm:py-4 flex justify-between items-center transition-all duration-300`}>
 
                     {/* 1. Left: Logo */}
                     <Link to="/" className="flex items-center gap-2 group">
@@ -71,11 +73,14 @@ export const Navbar = () => {
 
                     {/* 2. Center: Navigation Pills (Hidden on Mobile) */}
                     <div className="hidden lg:flex items-center gap-2">
+                        <button onClick={(e) => handleNavigation(e, 'menu')} className="font-display text-base uppercase tracking-wider text-domcy-green border border-transparent hover:border-domcy-green rounded-xl px-5 py-2 transition-all">
+                            Menu
+                        </button>
                         <button onClick={(e) => handleNavigation(e, 'events')} className="font-display text-base uppercase tracking-wider text-domcy-green border border-transparent hover:border-domcy-green rounded-xl px-5 py-2 transition-all">
                             Live Music
                         </button>
                         <Link to="/locations" className="font-display text-base uppercase tracking-wider text-domcy-green border border-transparent hover:border-domcy-green rounded-xl px-5 py-2 transition-all">
-                            Find Us
+                            Lokasi
                         </Link>
                     </div>
 
@@ -85,7 +90,7 @@ export const Navbar = () => {
                             onClick={openCart}
                             className="relative font-display text-xs sm:text-base uppercase tracking-wider bg-domcy-green text-domcy-cream rounded-xl px-4 py-2 sm:px-6 sm:py-2.5 hover:bg-domcy-black hover:scale-105 transition-all shadow-lg"
                         >
-                            Order Now
+                            Pesan Sekarang
                             {totalItems > 0 && (
                                 <span className="absolute -top-1 -right-1 w-4 h-4 sm:w-5 sm:h-5 bg-[#FF6B35] text-white flex items-center justify-center rounded-lg font-sans font-bold text-[10px] sm:text-xs">
                                     {totalItems}
@@ -97,7 +102,6 @@ export const Navbar = () => {
                             onClick={() => setIsOpen(true)}
                             className="bg-transparent text-domcy-green p-2 hover:scale-110 transition-transform flex flex-col justify-center items-center gap-[6px]"
                         >
-                            {/* Custom 2-line Menu Icon */}
                             <div className="w-6 sm:w-8 h-0.5 bg-domcy-green rounded-full"></div>
                             <div className="w-6 sm:w-8 h-0.5 bg-domcy-green rounded-full"></div>
                         </button>
@@ -124,10 +128,6 @@ export const Navbar = () => {
                             exit={{ opacity: 0, y: -20, scale: 0.95 }}
                             transition={{ type: "spring", stiffness: 300, damping: 25 }}
                             className="fixed top-4 left-4 right-4 sm:left-auto sm:right-auto sm:w-[500px] z-[80] mx-auto sm:mx-0 flex flex-col max-h-[85vh]"
-                            style={{
-                                left: typeof window !== 'undefined' && window.innerWidth >= 640 ? 'auto' : '16px',
-                                right: typeof window !== 'undefined' && window.innerWidth >= 640 ? '16px' : '16px'
-                            }}
                         >
                             {/* Menu Content Container */}
                             <div className="w-full bg-domcy-cream text-domcy-green rounded-2xl shadow-2xl overflow-hidden flex flex-col h-full border border-domcy-green/10">
@@ -143,7 +143,7 @@ export const Navbar = () => {
                                             onClick={openCart}
                                             className="relative font-display text-xs sm:text-base uppercase tracking-wider bg-domcy-green text-domcy-cream rounded-xl px-4 py-2 sm:px-6 sm:py-2.5 hover:bg-domcy-black hover:scale-105 transition-all shadow-lg"
                                         >
-                                            Order Now
+                                            Pesan Sekarang
                                             {totalItems > 0 && (
                                                 <span className="absolute -top-1 -right-1 w-4 h-4 sm:w-5 sm:h-5 bg-[#FF6B35] text-white flex items-center justify-center rounded-lg font-sans font-bold text-[10px] sm:text-xs">
                                                     {totalItems}
@@ -203,7 +203,7 @@ export const Navbar = () => {
 
                                 <div className="p-6 bg-domcy-green/5 flex justify-between items-center text-domcy-green">
                                     <div className="flex gap-4">
-                                        <span className="font-sans font-bold uppercase tracking-wider text-xs opacity-60">Follow Us</span>
+                                        <span className="font-sans font-bold uppercase tracking-wider text-xs opacity-60">Ikuti Kami</span>
                                         <a href="https://www.instagram.com/domcycoffee" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform"><Instagram className="w-5 h-5" /></a>
                                     </div>
                                 </div>

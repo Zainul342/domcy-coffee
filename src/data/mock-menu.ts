@@ -14,7 +14,7 @@ export const menuItems: MenuItem[] = [
     // --- Minuman Non-Kopi (Not Coffee) ---
     {
         id: 101,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Teh Hangat',
         description: 'Teh manis hangat yang menenangkan.',
         price: 3000,
@@ -24,7 +24,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 102,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Es Teh',
         description: 'Teh manis dingin segar.',
         price: 4000,
@@ -34,7 +34,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 103,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Milo Hangat',
         description: 'Susu coklat Milo hangat.',
         price: 6000,
@@ -44,7 +44,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 104,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Milo Dingin',
         description: 'Susu coklat Milo dingin segar.',
         price: 7000,
@@ -54,7 +54,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 105,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Chocolatos',
         description: 'Minuman coklat kental hangat.',
         price: 6000,
@@ -64,7 +64,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 106,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Chocolatos Es',
         description: 'Minuman coklat kental dingin.',
         price: 7000,
@@ -74,7 +74,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 107,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Susu Hangat Coklat',
         description: 'Susu kental manis coklat hangat.',
         price: 5000,
@@ -84,7 +84,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 108,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Susu Hangat Putih',
         description: 'Susu kental manis putih hangat.',
         price: 5000,
@@ -94,7 +94,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 109,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Susu Jahe',
         description: 'Susu hangat dengan ekstrak jahe asli.',
         price: 6000,
@@ -104,7 +104,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 110,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Jeruk Hangat',
         description: 'Sari jeruk peras hangat.',
         price: 5000,
@@ -114,7 +114,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 111,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Es Jeruk',
         description: 'Sari jeruk peras dingin segar.',
         price: 6000,
@@ -124,7 +124,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 112,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Lemon Teh Hangat',
         description: 'Teh lemon hangat kaya vitamin C.',
         price: 5000,
@@ -134,7 +134,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 113,
-        category: 'Non-Coffee',
+        category: 'Non-Kopi',
         name: 'Lemon Teh Es',
         description: 'Teh lemon dingin yang menyegarkan.',
         price: 6000,
@@ -146,7 +146,7 @@ export const menuItems: MenuItem[] = [
     // --- Kopi Panas (Hot Drink Coffee - Manual Brew & Espresso) ---
     {
         id: 201,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Vietnam Drip Original',
         description: 'Kopi hitam pekat metode drip. Bold.',
         price: 7000,
@@ -156,7 +156,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 202,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Vietnam Drip Susu',
         description: 'Kopi drip dengan susu kental manis.',
         price: 8000,
@@ -166,7 +166,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 203,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'V60',
         description: 'Seduhan pour-over yang clean dan aromatik.',
         price: 8000,
@@ -176,7 +176,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 204,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Latte',
         description: 'Espresso dengan susu steamed yang lembut.',
         price: 8000,
@@ -186,7 +186,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 205,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Latte Art',
         description: 'Latte dengan seni visual di atas foam.',
         price: 10000,
@@ -196,7 +196,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 206,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Cappuccino',
         description: 'Keseimbangan pas espresso, susu, dan foam.',
         price: 8000,
@@ -206,7 +206,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 207,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Affogato',
         description: 'Es krim vanilla disiram espresso panas.',
         price: 11000,
@@ -216,7 +216,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 208,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Kopi Tubruk Domcy',
         description: 'Kopi hitam klasik ampas, aroma nendang.',
         price: 6000,
@@ -226,7 +226,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 209,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Espresso',
         description: 'Ekstrak kopi murni 30ml.',
         price: 8000,
@@ -236,7 +236,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 210,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Long Black',
         description: 'Espresso dituang ke air panas (tetap ada crema).',
         price: 9000,
@@ -246,7 +246,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 211,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Americano',
         description: 'Espresso ditambah air panas.',
         price: 9000,
@@ -256,7 +256,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 212,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Macchiato',
         description: 'Espresso dengan sedikit foam susu.',
         price: 9000,
@@ -266,7 +266,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 213,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Flat White',
         description: 'Espresso dengan microfoam susu tipis.',
         price: 9000,
@@ -276,7 +276,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 214,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Mocca',
         description: 'Espresso dengan coklat dan susu.',
         price: 10000,
@@ -286,7 +286,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 215,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Latte Macchiato',
         description: 'Susu panas dengan espresso di atasnya.',
         price: 10000,
@@ -296,7 +296,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 216,
-        category: 'Coffee',
+        category: 'Kopi',
         name: 'Ginger Coffee',
         description: 'Kopi dengan ekstrak jahe.',
         price: 10000,
@@ -309,7 +309,7 @@ export const menuItems: MenuItem[] = [
     // --- Minuman Dingin & Milkshake (Cold Drink) ---
     {
         id: 301,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Cappuccino Milk Domcy',
         description: 'Es kopi susu cappuccino khas Domcy.',
         price: 12000,
@@ -319,7 +319,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 302,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Red Velvet',
         description: 'Minuman rasa red velvet creamy.',
         price: 12000,
@@ -329,7 +329,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 303,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Red Velvet Milkshake',
         description: 'Blend red velvet premium, susu, dan es krim.',
         price: 15000,
@@ -339,7 +339,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 304,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Iced Watermelon Matcha',
         description: 'Unik! Segarnya semangka ketemu matcha.',
         price: 15000,
@@ -349,7 +349,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 305,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Dalgona',
         description: 'Foam kopi manis di atas susu cair dingin.',
         price: 15000,
@@ -359,7 +359,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 306,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Iced Chocolate',
         description: 'Es coklat premium yang nyoklat banget.',
         price: 12000,
@@ -369,7 +369,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 307,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Coffeecrush Milk Domcy',
         description: 'Es kopi susu dengan tekstur crunchy.',
         price: 15000,
@@ -379,7 +379,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 308,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Coffee Candy Domcy',
         description: 'Es kopi dengan rasa manis permen karamel.',
         price: 15000,
@@ -389,7 +389,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 309,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Coffee Honey Domcy',
         description: 'Es kopi susu dengan madu murni.',
         price: 15000,
@@ -399,7 +399,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 310,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Mojito',
         description: 'Soda, lime, dan mint (Non-alkohol).',
         price: 10000,
@@ -409,7 +409,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 311,
-        category: 'Cold Drink',
+        category: 'Minuman Dingin',
         name: 'Chococcino',
         description: 'Perpaduan Coklat dan Cappuccino dingin.',
         price: 12000,
@@ -421,7 +421,7 @@ export const menuItems: MenuItem[] = [
     // --- Kopi Nusantara (Brewed Drink) ---
     {
         id: 401,
-        category: 'Manual Brew',
+        category: 'Seduh Manual',
         name: 'Kopi Bali',
         description: 'Kopi Bali dengan karakter fruity dan acid yang segar.',
         price: 12000,
@@ -431,7 +431,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 402,
-        category: 'Manual Brew',
+        category: 'Seduh Manual',
         name: 'Kopi Flores Lio',
         description: 'Kopi Flores dengan body tebal dan aroma coklat.',
         price: 13000,
@@ -441,7 +441,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 403,
-        category: 'Manual Brew',
+        category: 'Seduh Manual',
         name: 'Kopi Toraja',
         description: 'Kopi Toraja yang earthy dan spicy.',
         price: 13000,
@@ -451,7 +451,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 404,
-        category: 'Manual Brew',
+        category: 'Seduh Manual',
         name: 'Kopi Gayo',
         description: 'Kopi Aceh Gayo yang intens dan aromatik.',
         price: 13000,
@@ -461,7 +461,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 405,
-        category: 'Manual Brew',
+        category: 'Seduh Manual',
         name: 'Kopi Dampit',
         description: 'Kopi Dampit Malang.',
         price: 13000,
@@ -471,7 +471,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 406,
-        category: 'Manual Brew',
+        category: 'Seduh Manual',
         name: 'Kopi Enrekang',
         description: 'Kopi Enrekang Sulawesi.',
         price: 13000,
@@ -481,7 +481,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 407,
-        category: 'Manual Brew',
+        category: 'Seduh Manual',
         name: 'Kopi Java Ijen Raung',
         description: 'Kopi Java Ijen Raung.',
         price: 13000,
@@ -491,7 +491,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 408,
-        category: 'Manual Brew',
+        category: 'Seduh Manual',
         name: 'Kopi Preanger',
         description: 'Kopi Preanger Jawa Barat.',
         price: 13000,
@@ -501,7 +501,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 409,
-        category: 'Manual Brew',
+        category: 'Seduh Manual',
         name: 'Kopi Temanggung',
         description: 'Kopi Temanggung Jawa Tengah.',
         price: 13000,
@@ -514,7 +514,7 @@ export const menuItems: MenuItem[] = [
     // --- Makanan (Food Menu) ---
     {
         id: 501,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Ayam Geprek',
         description: 'Ayam crispy digeprek sambal bawang pedas + Nasi & Lalapan.',
         price: 13000,
@@ -524,7 +524,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 502,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Nasi Tempong',
         description: 'Nasi dengan lauk lengkap (ikan asin, tempe, tahu) & sambal tempong khas.',
         price: 15000,
@@ -534,7 +534,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 503,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Bebek Bakar',
         description: 'Bebek bakar bumbu meresap + sambal spesial.',
         price: 25000,
@@ -544,7 +544,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 504,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Chicken Katsu',
         description: 'Ayam fillet goreng tepung panko renyah + saus pilihan.',
         price: 18000,
@@ -554,7 +554,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 505,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Mie Pedas',
         description: 'Mie goreng/kuah dengan level pedas "setan" yang menantang.',
         price: 12000,
@@ -564,7 +564,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 506,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Nasi Goreng Keju',
         description: 'Nasi goreng gurih dengan topping parutan keju melimpah.',
         price: 15000,
@@ -574,7 +574,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 507,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Burger Ice Cream',
         description: 'Unik! Roti burger lembut diisi es krim dingin.',
         price: 15000,
@@ -584,7 +584,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 508,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Pisang Bakar Coklat Keju',
         description: 'Pisang bakar manis dengan topping coklat dan keju.',
         price: 10000,
@@ -594,7 +594,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 509,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Es Campur',
         description: 'Es serut dengan aneka buah, agar-agar, dan sirup segar.',
         price: 12000,
@@ -604,7 +604,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 510,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Menu Prasmanan',
         description: 'Menu Prasmanan untuk grup atau acara.',
         price: 0, // Assuming variable price or inquiry only
@@ -614,7 +614,7 @@ export const menuItems: MenuItem[] = [
     },
     {
         id: 511,
-        category: 'Food',
+        category: 'Makanan',
         name: 'Hotdog Ice Cream',
         description: 'Hotdog dengan es krim.',
         price: 15000,

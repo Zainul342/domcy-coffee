@@ -1,0 +1,14 @@
+﻿src/components/features/Menu/MenuItemRow.test.tsx(5,1): error TS6133: 'React' is declared but its value is never read.
+src/components/features/Menu/MenuItemRow.tsx(131,25): error TS2322: Type '{ src: string; alt: string; depth: number; removeBackground: true; }' is not assignable to type 'IntrinsicAttributes & FloatingImageProps'.
+  Property 'depth' does not exist on type 'IntrinsicAttributes & FloatingImageProps'.
+src/components/features/PreOrder/PreOrderModal.tsx(9,87): error TS6133: 'totalItems' is declared but its value is never read.
+src/components/layout/Hero.tsx(4,1): error TS6133: 'HERO_ASSETS' is declared but its value is never read.
+src/components/layout/Hero.tsx(50,21): error TS2322: Type '{ src: string; alt: string; depth: number; removeBackground: false; className: string; }' is not assignable to type 'IntrinsicAttributes & FloatingImageProps'.
+  Property 'depth' does not exist on type 'IntrinsicAttributes & FloatingImageProps'.
+src/components/layout/Hero.tsx(63,21): error TS2322: Type '{ src: string; alt: string; depth: number; removeBackground: false; className: string; }' is not assignable to type 'IntrinsicAttributes & FloatingImageProps'.
+  Property 'depth' does not exist on type 'IntrinsicAttributes & FloatingImageProps'.
+src/components/layout/Hero.tsx(76,21): error TS2322: Type '{ src: string; alt: string; depth: number; removeBackground: false; className: string; }' is not assignable to type 'IntrinsicAttributes & FloatingImageProps'.
+  Property 'depth' does not exist on type 'IntrinsicAttributes & FloatingImageProps'.
+src/components/layout/Hero.tsx(89,21): error TS2322: Type '{ src: string; alt: string; depth: number; removeBackground: false; className: string; }' is not assignable to type 'IntrinsicAttributes & FloatingImageProps'.
+  Property 'depth' does not exist on type 'IntrinsicAttributes & FloatingImageProps'.
+src/components/layout/ImageStaging.tsx(1,1): error TS6133: 'motion' is declared but its value is never read.

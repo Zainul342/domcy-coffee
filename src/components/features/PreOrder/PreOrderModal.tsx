@@ -6,7 +6,7 @@ import { createWhatsAppLink } from '../../../utils/whatsapp';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 export const PreOrderModal = () => {
-    const { isCartOpen, closeCart, items, updateQuantity, removeFromCart, totalPrice, totalItems } = useCart();
+    const { isCartOpen, closeCart, items, updateQuantity, removeFromCart, totalPrice } = useCart();
     const [pickupTime, setPickupTime] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
@@ -60,7 +60,8 @@ export const PreOrderModal = () => {
 
         message += `\n*Daftar Pesanan:*\n`;
         items.forEach(item => {
-            message += `- ${item.quantity}x ${item.name} (${formatCurrency(item.price * item.quantity)})\n`;
+            const priceValue = parseInt(item.price.replace(/[^0-9]/g, '')) * (item.price.toLowerCase().includes('k') ? 1000 : 1);
+            message += `- ${item.quantity}x ${item.name} (${formatCurrency(priceValue * item.quantity)})\n`;
         });
 
         message += `\n*Total Estimasi:* ${formatCurrency(totalPrice)}\n`;
@@ -77,10 +78,12 @@ export const PreOrderModal = () => {
         if (location.pathname !== '/') {
             navigate('/?scrollTo=menu');
         } else {
-            const element = document.getElementById('menu');
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
+            setTimeout(() => {
+                const element = document.getElementById('menu');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
         }
     };
 
@@ -108,7 +111,7 @@ export const PreOrderModal = () => {
                         <div className="p-6 bg-domcy-cream text-domcy-green flex justify-between items-center border-b-2 border-domcy-green">
                             <h2 className="font-display text-3xl uppercase tracking-wider flex items-center gap-2">
                                 <ShoppingBag className="w-6 h-6" />
-                                {step === 'cart' ? 'Your Order' : 'Isi Data Diri'}
+                                {step === 'cart' ? 'Pesanan Kamu' : 'Isi Data Diri'}
                             </h2>
                             <button onClick={closeCart} className="p-1 hover:bg-domcy-green/10 rounded-full transition-colors">
                                 <X className="w-6 h-6" />
@@ -125,14 +128,14 @@ export const PreOrderModal = () => {
                                             <div className="bg-domcy-cream/10 p-6 rounded-full mb-6">
                                                 <ShoppingBag className="w-12 h-12 opacity-60" />
                                             </div>
-                                            <p className="font-display text-2xl uppercase tracking-wide mb-2">Your cart is empty</p>
-                                            <p className="font-sans text-sm opacity-60 mb-8 max-w-[200px]">Looks like you haven't added anything yet.</p>
+                                            <p className="font-display text-2xl uppercase tracking-wide mb-2">Keranjangmu kosong</p>
+                                            <p className="font-sans text-sm opacity-60 mb-8 max-w-[200px]">Sepertinya kamu belum memilih menu apapun.</p>
 
                                             <button
                                                 onClick={handleBrowseMenu}
                                                 className="bg-domcy-cream text-domcy-green font-display text-lg uppercase tracking-wider px-8 py-3 rounded-lg hover:scale-105 transition-transform flex items-center gap-2 shadow-lg"
                                             >
-                                                Browse Menu <ArrowRight className="w-4 h-4" />
+                                                Lihat Menu <ArrowRight className="w-4 h-4" />
                                             </button>
                                         </div>
                                     ) : (
@@ -258,7 +261,7 @@ export const PreOrderModal = () => {
                                         {/* Time Selector */}
                                         <div>
                                             <label className="block font-sans text-sm text-domcy-cream/70 mb-2 flex items-center gap-2">
-                                                <Clock className="w-4 h-4" /> Pickup Time (Today)
+                                                <Clock className="w-4 h-4" /> Waktu Ambil (Hari Ini)
                                             </label>
                                             <input
                                                 type="time"
@@ -270,7 +273,7 @@ export const PreOrderModal = () => {
 
                                         <div className="flex justify-between items-end border-t border-domcy-cream/10 pt-4">
                                             <div>
-                                                <p className="font-sans text-sm text-domcy-cream/60">Total Estimated</p>
+                                                <p className="font-sans text-sm text-domcy-cream/60">Estimasi Total</p>
                                                 <p className="font-display text-3xl text-domcy-accent tracking-wider">
                                                     {formatCurrency(totalPrice)}
                                                 </p>
@@ -280,7 +283,7 @@ export const PreOrderModal = () => {
                                                 data-testid="checkout-button"
                                                 className="bg-domcy-amber text-domcy-black font-display text-xl uppercase tracking-wider px-6 py-3 rounded-xl hover:bg-white hover:text-domcy-green transition-colors shadow-lg flex items-center gap-2"
                                             >
-                                                Checkout <ArrowRight className="w-5 h-5" />
+                                                Lanjut <ArrowRight className="w-5 h-5" />
                                             </button>
                                         </div>
                                     </>
@@ -291,14 +294,14 @@ export const PreOrderModal = () => {
                                             onClick={() => setStep('cart')}
                                             className="flex-1 border-2 border-domcy-cream/30 text-domcy-cream font-display text-lg uppercase tracking-wider px-4 py-3 rounded-xl hover:bg-white/10 transition-colors"
                                         >
-                                            Back
+                                            Kembali
                                         </button>
                                         <button
                                             onClick={handleSendOrder}
                                             data-testid="confirm-whatsapp-button"
                                             className="flex-[2] bg-[#25D366] text-white font-display text-lg uppercase tracking-wider px-4 py-3 rounded-xl hover:bg-[#128C7E] transition-colors shadow-lg flex items-center justify-center gap-2"
                                         >
-                                            Confirm via WhatsApp
+                                            Kirim via WhatsApp
                                         </button>
                                     </div>
                                 )}

@@ -55,12 +55,12 @@ export const MenuItemRow = ({ id, name, description, price, image, isSoldOut, st
                         {name}
                         {isFeatured && (
                             <span className="bg-domcy-amber text-black text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-none uppercase tracking-wider shrink-0 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                                Best Seller
+                                Terlaris
                             </span>
                         )}
                         {tags.includes('spicy') && (
                             <span className="bg-red-500 text-white text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-none uppercase tracking-wider shrink-0">
-                                Spicy 🌶️
+                                Pedas 🌶️
                             </span>
                         )}
                         {tags.includes('vegan') && (
@@ -70,13 +70,13 @@ export const MenuItemRow = ({ id, name, description, price, image, isSoldOut, st
                         )}
                         {effectiveStatus === 'limited' && (
                             <span className="bg-yellow-500 text-black text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-none uppercase tracking-wider shrink-0 shadow-sm">
-                                Limited
+                                Terbatas
                             </span>
                         )}
                     </h3>
                     {isItemSoldOut && (
                         <span className="bg-red-600 text-white text-[10px] sm:text-xs font-sans font-bold px-2 py-0.5 rounded-none uppercase tracking-wider shrink-0">
-                            Sold Out
+                            Habis
                         </span>
                     )}
                 </div>
@@ -128,7 +128,6 @@ export const MenuItemRow = ({ id, name, description, price, image, isSoldOut, st
                     <FloatingImage
                         src={image}
                         alt={name}
-                        depth={3}
                         removeBackground={true}
                     />
                 </motion.div>

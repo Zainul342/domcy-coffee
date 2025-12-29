@@ -14,7 +14,7 @@ export const WhyDomcySection = () => {
                         viewport={{ once: true }}
                         className="font-sans font-bold text-domcy-accent uppercase tracking-[0.2em] text-sm mb-4 block"
                     >
-                        The Domcy Difference
+                        Kenapa Harus Domcy?
                     </motion.span>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ export const WhyDomcySection = () => {
                         transition={{ delay: 0.1 }}
                         className="font-display text-4xl md:text-6xl uppercase leading-none max-w-3xl mx-auto"
                     >
-                        More Than Just <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-domcy-green to-domcy-lightGreen">Another Coffee Shop</span>
+                        Bukan Sekedar <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-domcy-green to-domcy-lightGreen">Tempat Nongkrong Biasa</span>
                     </motion.h2>
                 </div>
 

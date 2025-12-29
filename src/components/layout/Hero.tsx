@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { DomcyLogo } from '../ui/DomcyLogo';
 import { FloatingImage } from '../ui/FloatingImage';
-import { HERO_ASSETS } from './ImageStaging';
 
 export const Hero = () => {
     // Scroll effects removed as per request
@@ -47,7 +46,6 @@ export const Hero = () => {
                 <FloatingImage
                     src="/hero-nasi-transparent.png"
                     alt="Nasi Tempong"
-                    depth={3}
                     removeBackground={false}
                     className="rotate-[-8deg] scale-105" // Added scale for impact
                 />
@@ -60,7 +58,6 @@ export const Hero = () => {
                 <FloatingImage
                     src="/hero-coffee-transparent.png"
                     alt="Coffee"
-                    depth={4}
                     removeBackground={false}
                     className="rotate-[8deg] scale-110"
                 />
@@ -73,7 +70,6 @@ export const Hero = () => {
                 <FloatingImage
                     src="/hero-sambal-transparent.png"
                     alt="Sambal"
-                    depth={5}
                     removeBackground={false}
                     className="rotate-[15deg] scale-110"
                 />
@@ -86,7 +82,6 @@ export const Hero = () => {
                 <FloatingImage
                     src="/hero-chili-transparent.png"
                     alt="Chili"
-                    depth={2}
                     removeBackground={false}
                     className="rotate-[-10deg] scale-110"
                 />

@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { MapPin, Clock, Phone, Navigation, ArrowLeft, Search } from 'lucide-react';
+import { MapPin, Clock, Navigation, ArrowLeft, Search } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../../../context/CartContext';
@@ -29,7 +29,7 @@ const locationsData = [
         area: 'Donomulyo, Malang',
         address: 'Jl. Raya Dawung No.416, Kec. Donomulyo, Kab. Malang, Jawa Timur 65167',
         coordinates: [-8.2977513, 112.4301245] as [number, number],
-        openStatus: 'OPEN NOW',
+        openStatus: 'BUKA',
         hours: [
             { day: 'Senin - Minggu', time: '10:00 - 23:00' }
         ],
@@ -43,7 +43,7 @@ const locationsData = [
 export const Locations = () => {
     const { openCart } = useCart();
     const [searchQuery, setSearchQuery] = useState('');
-    const [selectedLocation, setSelectedLocation] = useState(locationsData[0]);
+    const [selectedLocation] = useState(locationsData[0]);
 
     const filteredLocations = locationsData.filter(loc =>
         loc.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -91,10 +91,10 @@ export const Locations = () => {
                             to="/"
                             className="text-domcy-cream/60 hover:text-domcy-cream transition-colors flex items-center gap-2 text-sm font-sans uppercase tracking-widest"
                         >
-                            <ArrowLeft className="w-4 h-4" /> Back to Home
+                            <ArrowLeft className="w-4 h-4" /> Kembali
                         </Link>
                     </div>
-                    <h2 className="font-display text-4xl text-domcy-cream uppercase tracking-wide">Find Us</h2>
+                    <h2 className="font-display text-4xl text-domcy-cream uppercase tracking-wide">Lokasi Utama</h2>
                 </div>
 
                 {/* Search */}
@@ -103,7 +103,7 @@ export const Locations = () => {
                         <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-domcy-cream/40" />
                         <input
                             type="text"
-                            placeholder="Search by city or area..."
+                            placeholder="Cari kota atau area..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             className="w-full bg-domcy-black/20 border border-domcy-cream/10 rounded-lg py-3 pl-12 pr-4 text-domcy-cream placeholder-domcy-cream/30 focus:outline-none focus:border-domcy-cream/50 transition-colors font-sans"
@@ -154,13 +154,13 @@ export const Locations = () => {
                                     className="flex items-center justify-center gap-2 bg-domcy-cream text-domcy-green py-3 rounded-lg font-display text-lg uppercase tracking-wider hover:bg-white transition-colors"
                                 >
                                     <Navigation className="w-4 h-4" />
-                                    Directions
+                                    Petunjuk Arah
                                 </a>
                                 <button
                                     onClick={openCart}
                                     className="flex items-center justify-center gap-2 border border-domcy-cream text-domcy-cream py-3 rounded-lg font-display text-lg uppercase tracking-wider hover:bg-domcy-cream hover:text-domcy-green transition-colors"
                                 >
-                                    Order
+                                    Pesan Sekarang
                                 </button>
                             </div>
                         </div>

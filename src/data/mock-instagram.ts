@@ -9,44 +9,38 @@ export interface InstagramPost {
 export const instagramPosts: InstagramPost[] = [
     {
         id: 1,
-        image: "/images/instagram/feed-1.png",
-        caption: "Suasana malam di Kopi Donomulyo. Tempat ternyaman buat sharing cerita. ☕✨ #DomcyCoffee #MalangHits",
+        image: "/images/instagram/feed-4.jpg", // Nasi Tempong/Food
+        caption: "Yuk yang mau order bisa langsung chat admin ya! Delivery & Dine in. Available menu: Gurami bakar, Ayam geprek, Varian mie, Nasi Tempong... 🍛🔥 #domcycoffee #donomulyo",
         likes: 124,
-        link: "https://instagram.com/domcycoffee"
+        link: "https://www.instagram.com/p/DIazsoGy0Uw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         id: 2,
-        image: "/images/instagram/feed-2.png",
-        caption: "Latte art crafted with passion. Coffee that tastes as good as it looks. ☕🎨 #LatteArt #Domcy",
-        likes: 189,
-        link: "https://instagram.com/domcycoffee"
+        image: "/images/instagram/feed-5.jpg", // Ayam Geprek
+        caption: "Order sekarang 🔥 #fypage #domcycoffee #food",
+        likes: 89,
+        link: "https://www.instagram.com/p/DIOBdgvypwD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         id: 3,
-        image: "/images/instagram/feed-3.png",
-        caption: "Interior baru dengan balutan aksen kayu dan industrial. Mewah tapi tetap 'ndeso' (lokal). 🌿🪵 #InteriorCafe #Donomulyo",
+        image: "/images/instagram/feed-3.jpg", // Interior/Location
+        caption: "WE LOVE DOMCY COFFEE 📍 Jl raya Donomulyo RT 9 RW 3. Open: 08:00 - 23:00 (Every Day). Available Catering & Nasi Box! 🍱 #donomulyo #kulinermalang",
         likes: 215,
-        link: "https://instagram.com/domcycoffee"
+        link: "https://www.instagram.com/p/DG-CUw-yjlL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         id: 4,
-        image: "/images/instagram/feed-4.png",
-        caption: "Nasi Tempong legendaris Domcy. Pedasnya nendang, lauknya komplit! 🔥🍱 #NasiTempong #KulinerMalang",
+        image: "/images/instagram/feed-2.jpg", // Coffee/Snack vibe
+        caption: "Ada yang baru nih paket Snack rame rame 🍟 Tempong Bebek, Gurami Bakar. Yuk gas order! 🦋 #malanghits #nongkrongmalang",
         likes: 156,
-        link: "https://instagram.com/domcycoffee"
+        link: "https://www.instagram.com/p/DGZpuC0SgFu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         id: 5,
-        image: "/images/instagram/feed-5.png",
-        caption: "Ayam Geprek sambal bawang. Jagonya bikin gagal diet! 😂🍗 #AyamGeprek #DomcyFood",
+        image: "/images/instagram/feed-1.jpg", // Vibe/Reel
+        caption: "Luvvv 📍♥️ #domcycoffee #reels",
         likes: 178,
-        link: "https://instagram.com/domcycoffee"
+        link: "https://www.instagram.com/reel/C-aE97RyHZs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
-    {
-        id: 6,
-        image: "/images/instagram/feed-6.png",
-        caption: "Vietnam Drip, pilihan tepat buat yang suka kopi strong. ☕⏳ #VietnamDrip #KopiHitam",
-        likes: 243,
-        link: "https://instagram.com/domcycoffee"
-    }
+
 ];

@@ -92,7 +92,7 @@ export const MenuSection = () => {
                         onClick={() => setIsFullMenuOpen(true)}
                         className="bg-domcy-cream text-domcy-green font-display text-2xl px-12 py-4 uppercase hover:bg-white transition-all shadow-lg"
                     >
-                        View Full Menu
+                        Lihat Menu Lengkap
                     </button>
                     <p className="mt-4 font-sans text-sm text-domcy-cream/60">
                         Klik untuk melihat semua menu dalam satu halaman
@@ -119,7 +119,7 @@ export const MenuSection = () => {
                             </button>
 
                             <h2 className="font-display text-5xl md:text-7xl text-domcy-cream text-center mb-16 uppercase">
-                                Full Menu
+                                Daftar Menu Lengkap
                             </h2>
 
                             <div className="max-w-4xl mx-auto flex flex-col gap-16">
@@ -150,7 +150,7 @@ export const MenuSection = () => {
                                     onClick={() => setIsFullMenuOpen(false)}
                                     className="text-domcy-cream/60 hover:text-domcy-amber underline font-sans uppercase tracking-widest text-sm"
                                 >
-                                    Close Full Menu
+                                    Tutup Menu
                                 </button>
                             </div>
                         </div>

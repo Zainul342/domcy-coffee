@@ -37,7 +37,7 @@ export const MobileFloatingNav = () => {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
                             </span>
-                            <span className="font-sans font-bold text-xs uppercase tracking-wider">Kitchen Open</span>
+                            <span className="font-sans font-bold text-xs uppercase tracking-wider">Dapur Buka</span>
                         </div>
 
                         {/* Cart Summary */}
@@ -47,7 +47,7 @@ export const MobileFloatingNav = () => {
                         >
                             <ShoppingBag className="w-4 h-4" />
                             <span className="font-sans font-bold text-sm">
-                                {totalItems} Items
+                                {totalItems} Pesanan
                             </span>
                         </button>
                     </div>

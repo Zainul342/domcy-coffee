@@ -21,10 +21,10 @@ export const InstagramSection = () => {
                             viewport={{ once: true }}
                             className="font-display text-5xl md:text-7xl uppercase leading-none"
                         >
-                            Caught on <br /> <span className="text-domcy-amber">Camera</span>
+                            Momen <br /> <span className="text-domcy-amber">Seru</span>
                         </motion.h2>
                         <p className="font-sans text-xl opacity-70 mt-4 max-w-md">
-                            Snapshots of good times, great coffee, and even better company. Tag us to be featured!
+                            Potret kebersamaan, kopi nikmat, dan suasana hangat di Domcy Coffee. Tag kami untuk tampil di sini!
                         </p>
                     </div>
 
@@ -38,7 +38,7 @@ export const InstagramSection = () => {
                         className="group flex items-center gap-3 bg-domcy-amber text-domcy-black px-8 py-4 font-display text-xl uppercase tracking-wider hover:bg-white transition-all shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.4)]"
                     >
                         <Instagram className="w-6 h-6" />
-                        Follow @domcycoffee
+                        Ikuti @domcycoffee
                         <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                     </motion.a>
                 </div>
