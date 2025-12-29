@@ -119,7 +119,7 @@ export const MenuItemRow = ({ id, name, description, price, image, isSoldOut, st
                         scale: isHovered ? 1 : 0.8,
                         rotate: isHovered ? 5 : -5,
                         left: 'auto',
-                        right: '0%',
+                        right: '20%',
                         top: '50%'
                     }}
                     transition={{ duration: 0.3, ease: "backOut" }}

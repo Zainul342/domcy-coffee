@@ -2,6 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { MapPin, Clock, Phone, Navigation, ArrowLeft, Search } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from '../../../context/CartContext';
 import L from 'leaflet';
 
 // Fix for default marker icon in Leaflet + Vite/Webpack
@@ -40,6 +41,7 @@ const locationsData = [
 ];
 
 export const Locations = () => {
+    const { openCart } = useCart();
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedLocation, setSelectedLocation] = useState(locationsData[0]);
 
@@ -154,7 +156,10 @@ export const Locations = () => {
                                     <Navigation className="w-4 h-4" />
                                     Directions
                                 </a>
-                                <button className="flex items-center justify-center gap-2 border border-domcy-cream text-domcy-cream py-3 rounded-lg font-display text-lg uppercase tracking-wider hover:bg-domcy-cream hover:text-domcy-green transition-colors">
+                                <button
+                                    onClick={openCart}
+                                    className="flex items-center justify-center gap-2 border border-domcy-cream text-domcy-cream py-3 rounded-lg font-display text-lg uppercase tracking-wider hover:bg-domcy-cream hover:text-domcy-green transition-colors"
+                                >
                                     Order
                                 </button>
                             </div>

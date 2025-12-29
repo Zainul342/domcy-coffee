@@ -1,8 +1,8 @@
 {
-  "status": "commited",
+  "status": "init",
   "type": "frontend",
   "scope": "codebase",
-  "localEndpoint": "http://127.0.0.1:5173",
+  "localEndpoint": "http://localhost:5173/",
   "executionArgs": {
     "projectName": "domcy-coffee",
     "projectPath": "c:\\Users\\User\\Documents\\VS CODE\\domcy-coffee",
@@ -14,5 +14,6 @@
       "API_KEY": "sk-user-Ph_OszVLi--d_IEfLJhzO-Ovgp6GkC-lIhlJA74vy3OosJ_mw9fQT6NALxmjtN37nXfsT2pPZsrZUq5EOaynFGbyqu5xBLPGfvE1dTEQcI2T-e6cF0ykbycwco7N2oua09I"
     }
   },
-  "proxy": "http://aa7e3403-63df-4fca-a6b4-799d681cee14:kfUMWD7Hfu4wv4kwsJlnKnlB3U1eMazF@tun.testsprite.com:8080"
+  "proxy": "http://aa7e3403-63df-4fca-a6b4-799d681cee14:kfUMWD7Hfu4wv4kwsJlnKnlB3U1eMazF@tun.testsprite.com:8080",
+  "serverPort": 61079
 }
