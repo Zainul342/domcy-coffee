@@ -16,7 +16,7 @@ describe('CartContext', () => {
 
     it('should add items to the cart', () => {
         const { result } = renderHook(() => useCart(), { wrapper });
-        const item = { id: '1', name: 'Kopi Susu', price: 15000, category: 'kopsu' };
+        const item = { id: 1, name: 'Kopi Susu', price: '15k', category: 'kopsu' };
 
         act(() => {
             result.current.addToCart(item);
@@ -30,7 +30,7 @@ describe('CartContext', () => {
 
     it('should increment quantity when adding the same item', () => {
         const { result } = renderHook(() => useCart(), { wrapper });
-        const item = { id: '1', name: 'Kopi Susu', price: 15000, category: 'kopsu' };
+        const item = { id: 1, name: 'Kopi Susu', price: '15k', category: 'kopsu' };
 
         act(() => {
             result.current.addToCart(item);
@@ -44,11 +44,11 @@ describe('CartContext', () => {
 
     it('should remove items from the cart', () => {
         const { result } = renderHook(() => useCart(), { wrapper });
-        const item = { id: '1', name: 'Kopi Susu', price: 15000, category: 'kopsu' };
+        const item = { id: 1, name: 'Kopi Susu', price: '15k', category: 'kopsu' };
 
         act(() => {
             result.current.addToCart(item);
-            result.current.removeFromCart('1');
+            result.current.removeFromCart(1);
         });
 
         expect(result.current.items).toHaveLength(0);
@@ -57,7 +57,7 @@ describe('CartContext', () => {
 
     it('should clear the cart', () => {
         const { result } = renderHook(() => useCart(), { wrapper });
-        const item = { id: '1', name: 'Kopi Susu', price: 15000, category: 'kopsu' };
+        const item = { id: 1, name: 'Kopi Susu', price: '15k', category: 'kopsu' };
 
         act(() => {
             result.current.addToCart(item);

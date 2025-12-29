@@ -6,7 +6,15 @@ import React from 'react';
 
 // Mock FloatingImage as it might have complex animations or dependencies
 vi.mock('../../ui/FloatingImage', () => ({
-    FloatingImage: () => <div data-testid="floating-image" />
+    FloatingImage: () => {
+        return {
+            $$typeof: Symbol.for('react.element'),
+            type: 'div',
+            props: { 'data-testid': 'floating-image' },
+            ref: null,
+            key: null,
+        }
+    }
 }));
 
 describe('MenuItemRow', () => {
