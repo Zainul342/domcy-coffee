@@ -1,0 +1,64 @@
+{
+    "tech_stack": [
+        "TypeScript",
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Framer Motion",
+        "React Router",
+        "Zustand",
+        "React Leaflet"
+    ],
+    "features": [
+        {
+            "name": "Navigation",
+            "description": "Responsive navigation bar with mobile toggle and smooth scrolling.",
+            "files": [
+                "src/components/layout/Navbar.tsx",
+                "src/components/ui/MobileFloatingNav.tsx"
+            ]
+        },
+        {
+            "name": "Menu Display",
+            "description": "Displays categorized menu items with filtering, details, and add-to-cart functionality.",
+            "files": [
+                "src/components/features/Menu/MenuSection.tsx",
+                "src/components/features/Menu/MenuItemRow.tsx",
+                "src/components/features/Menu/MenuDetailModal.tsx",
+                "src/data/mock-menu.ts"
+            ]
+        },
+        {
+            "name": "Shopping Cart",
+            "description": "Manages cart state (add/remove/update items) and persists data using local storage.",
+            "files": [
+                "src/context/useCartStore.ts",
+                "src/components/ui/FloatingOrderButton.tsx",
+                "src/components/features/PreOrder/PreOrderModal.tsx"
+            ]
+        },
+        {
+            "name": "Order Processing",
+            "description": "Handles pre-order logic, user details form, and WhatsApp message generation.",
+            "files": [
+                "src/components/features/PreOrder/PreOrderModal.tsx"
+            ]
+        },
+        {
+            "name": "Location Map",
+            "description": "Interactive map showing store location using Leaflet.",
+            "files": [
+                "src/components/features/Location/LocationMap.tsx"
+            ]
+        },
+        {
+            "name": "UI Components",
+            "description": "Reusable UI components like buttons, floating images, and social links.",
+            "files": [
+                "src/components/ui/Button.tsx",
+                "src/components/ui/FloatingImage.tsx",
+                "src/components/ui/SocialLinks.tsx"
+            ]
+        }
+    ]
+}

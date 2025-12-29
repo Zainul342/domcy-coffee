@@ -1,321 +1,327 @@
 [
   {
     "id": "TC001",
-    "title": "Menu Display - Render Coffee Items Correctly",
-    "description": "Verify that the coffee menu items are displayed with accurate names, prices, and descriptions, and that the 'add to cart' button is present and functional for each item.",
+    "title": "Navigation Bar Responsiveness",
+    "description": "Verify that the navigation bar is fully responsive on desktop and mobile devices, supports toggle on mobile, and enables smooth scrolling to sections.",
     "category": "functional",
     "priority": "High",
     "steps": [
       {
         "type": "action",
-        "description": "Navigate to the homepage."
+        "description": "Open the application on a desktop browser."
       },
       {
         "type": "assertion",
-        "description": "Verify all coffee menu items are listed."
+        "description": "Check that the navigation bar displays all menu links horizontally."
+      },
+      {
+        "type": "action",
+        "description": "Click on a navigation link."
       },
       {
         "type": "assertion",
-        "description": "Check each item displays the correct price and description."
+        "description": "Verify that the page smoothly scrolls to the corresponding section."
+      },
+      {
+        "type": "action",
+        "description": "Resize the browser window to a typical mobile screen width."
       },
       {
         "type": "assertion",
-        "description": "Ensure that an 'add to cart' button is present and clickable for each menu item."
+        "description": "Confirm the navigation bar collapses into a toggle icon."
+      },
+      {
+        "type": "action",
+        "description": "Click the toggle icon to open the mobile navigation menu."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the menu items are displayed vertically and are accessible."
+      },
+      {
+        "type": "action",
+        "description": "Tap on a menu item in the mobile menu."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify smooth scrolling to the correct section and that the menu closes."
       }
     ]
   },
   {
     "id": "TC002",
-    "title": "Shopping Cart - Add Item Functionality",
-    "description": "Test adding a coffee item to the shopping cart updates the cart state and UI accordingly.",
+    "title": "Menu Category Filtering",
+    "description": "Verify that menu items are correctly categorized and filtering by category updates the displayed items accurately.",
     "category": "functional",
     "priority": "High",
     "steps": [
       {
         "type": "action",
-        "description": "On the menu page, click the 'add to cart' button for a coffee item."
+        "description": "Load the menu section on the app."
       },
       {
         "type": "assertion",
-        "description": "Verify the shopping cart context updates to include the selected coffee item."
+        "description": "Confirm that all menu categories are displayed."
+      },
+      {
+        "type": "action",
+        "description": "Select a specific category filter."
       },
       {
         "type": "assertion",
-        "description": "Confirm the shopping cart UI reflects the added item with correct details and quantity."
+        "description": "Ensure that only items from the selected category are visible."
+      },
+      {
+        "type": "action",
+        "description": "Clear the filter or select 'All' categories."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that all menu items are displayed again."
       }
     ]
   },
   {
     "id": "TC003",
-    "title": "Shopping Cart - Remove Item Functionality",
-    "description": "Ensure removing a coffee item from the shopping cart updates the cart state and UI correctly.",
+    "title": "Menu Item Detail Modal Display",
+    "description": "Validate that clicking a menu item opens a detail modal with correct information and that the modal can be closed properly.",
     "category": "functional",
     "priority": "High",
     "steps": [
       {
         "type": "action",
-        "description": "Add a coffee item to the cart if none exists."
+        "description": "Click on a menu item to open its details."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that the detail modal appears with correct item name, description, price, and image."
       },
       {
         "type": "action",
-        "description": "Remove the coffee item from the cart."
+        "description": "Check that the add-to-cart button is visible and enabled."
+      },
+      {
+        "type": "action",
+        "description": "Close the detail modal using the close button."
       },
       {
         "type": "assertion",
-        "description": "Verify the item is removed from the shopping cart context state."
-      },
-      {
-        "type": "assertion",
-        "description": "Confirm the shopping cart UI no longer displays the removed item."
+        "description": "Ensure the modal closes and the menu returns to its previous state."
       }
     ]
   },
   {
     "id": "TC004",
-    "title": "Shopping Cart - Update Item Quantity",
-    "description": "Validate updating the quantity of an item in the shopping cart updates the context state and UI appropriately, including edge cases of minimum (1) and maximum quantities.",
+    "title": "Add, Update, and Remove Items in Shopping Cart",
+    "description": "Test the shopping cart functionality including adding items from the menu, updating item quantities, removing items, and state persistence.",
     "category": "functional",
     "priority": "High",
     "steps": [
       {
         "type": "action",
-        "description": "Add a coffee item to the cart."
+        "description": "Add one menu item to the shopping cart from the detail modal."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the item appears in the cart with the correct quantity and price."
       },
       {
         "type": "action",
-        "description": "Increase the quantity of the item and verify the updated quantity."
+        "description": "Add the same item again to increase the quantity."
       },
       {
         "type": "assertion",
-        "description": "Ensure the shopping cart context reflects the increased quantity."
-      },
-      {
-        "type": "assertion",
-        "description": "Confirm the UI updates to show the new quantity."
+        "description": "Confirm that the quantity increases appropriately without duplicate entries."
       },
       {
         "type": "action",
-        "description": "Decrease the quantity to 1."
+        "description": "Update the quantity of an item directly in the cart (e.g., increment and decrement)."
       },
       {
         "type": "assertion",
-        "description": "Verify the cart quantity does not go below 1."
+        "description": "Verify the item quantity updates and the total price recalculates correctly."
       },
       {
         "type": "action",
-        "description": "Attempt to set quantity to zero or negative value via UI or context."
+        "description": "Remove an item from the cart."
       },
       {
         "type": "assertion",
-        "description": "Confirm the application prevents invalid quantities and handles errors gracefully."
+        "description": "Confirm the item is removed and the cart updates."
+      },
+      {
+        "type": "action",
+        "description": "Reload the browser or close and reopen the app."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the cart state persists with correct items and quantities via local storage."
       }
     ]
   },
   {
     "id": "TC005",
-    "title": "Order Process - PreOrder Modal Display",
-    "description": "Verify that clicking 'Proceed to Order' in the cart triggers the PreOrderModal showing accurate order details for confirmation.",
-    "category": "functional",
-    "priority": "High",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Add one or more items to the shopping cart."
-      },
-      {
-        "type": "action",
-        "description": "Click the button to proceed to order and open the PreOrderModal."
-      },
-      {
-        "type": "assertion",
-        "description": "Verify the PreOrderModal displays all selected items with correct quantities, prices, and total."
-      },
-      {
-        "type": "assertion",
-        "description": "Ensure modal controls allow confirmation or cancellation."
-      }
-    ]
-  },
-  {
-    "id": "TC006",
-    "title": "Order Process - Confirm Order and Redirect to WhatsApp",
-    "description": "Confirm that order confirmation from PreOrderModal opens WhatsApp with the order message prefilled correctly.",
-    "category": "functional",
-    "priority": "High",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Complete a valid order in the PreOrderModal."
-      },
-      {
-        "type": "action",
-        "description": "Click the confirm button to finalize the order."
-      },
-      {
-        "type": "assertion",
-        "description": "Check that WhatsApp opens with a correctly formatted message containing the order details."
-      },
-      {
-        "type": "assertion",
-        "description": "Validate the order details in the WhatsApp message match the cart contents."
-      }
-    ]
-  },
-  {
-    "id": "TC007",
-    "title": "Responsive Navigation - Desktop and Mobile",
-    "description": "Test that the navigation bar and mobile floating menu render correctly and enable navigation on their respective viewports.",
-    "category": "functional",
-    "priority": "High",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Load the site on a desktop viewport."
-      },
-      {
-        "type": "assertion",
-        "description": "Verify the top navigation bar displays all functional navigation links."
-      },
-      {
-        "type": "action",
-        "description": "Resize the viewport to a mobile screen size."
-      },
-      {
-        "type": "assertion",
-        "description": "Confirm the mobile floating menu appears and navigation links are accessible and functional."
-      },
-      {
-        "type": "action",
-        "description": "Use navigation to switch between site sections."
-      },
-      {
-        "type": "assertion",
-        "description": "Validate that navigation transitions are smooth and correct content is loaded."
-      }
-    ]
-  },
-  {
-    "id": "TC008",
-    "title": "Animated UI Components - Float and Entry Animations",
-    "description": "Verify that UI animations for floating images and menu item entry perform smoothly without visual glitches or performance issues on supported devices.",
-    "category": "ui",
-    "priority": "Medium",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Navigate to the menu page."
-      },
-      {
-        "type": "assertion",
-        "description": "Observe that floating images and entry animations occur smoothly on menu items."
-      },
-      {
-        "type": "assertion",
-        "description": "Verify no jank or frame drops during animation."
-      },
-      {
-        "type": "action",
-        "description": "Test animations on multiple devices and browsers."
-      }
-    ]
-  },
-  {
-    "id": "TC009",
-    "title": "Location Map - Store Location Display and Interaction",
-    "description": "Ensure the interactive React Leaflet map displays the Domcy Coffee store location correctly and supports user interactions like zoom and pan.",
-    "category": "functional",
-    "priority": "Medium",
-    "steps": [
-      {
-        "type": "action",
-        "description": "Navigate to the location map section."
-      },
-      {
-        "type": "assertion",
-        "description": "Verify the store location marker is correctly positioned on the map."
-      },
-      {
-        "type": "action",
-        "description": "Use zoom controls to zoom in and out on the map."
-      },
-      {
-        "type": "assertion",
-        "description": "Confirm zoom functions respond correctly without errors."
-      },
-      {
-        "type": "action",
-        "description": "Click and drag on the map to pan the view."
-      },
-      {
-        "type": "assertion",
-        "description": "Ensure panning is smooth and the map updates accordingly."
-      }
-    ]
-  },
-  {
-    "id": "TC010",
-    "title": "Error Handling - Invalid Quantity Inputs",
-    "description": "Verify the application handles invalid inputs for quantity updates gracefully, including non-numeric, negative, and zero values.",
+    "title": "Pre-Order Modal User Input Validation",
+    "description": "Verify that the pre-order modal form validates user inputs for required fields and correct formats before submission.",
     "category": "error handling",
     "priority": "High",
     "steps": [
       {
         "type": "action",
-        "description": "Attempt to set item quantity to non-numeric input via UI."
-      },
-      {
-        "type": "assertion",
-        "description": "Check that input validation prevents the update and shows appropriate error or ignores invalid input."
+        "description": "Open the pre-order modal from the shopping cart."
       },
       {
         "type": "action",
-        "description": "Attempt to set item quantity to zero or negative number."
+        "description": "Attempt to submit the form leaving all fields empty."
       },
       {
         "type": "assertion",
-        "description": "Confirm the cart does not accept the change and maintains previous valid quantity."
+        "description": "Verify that validation errors are shown for all required fields."
+      },
+      {
+        "type": "action",
+        "description": "Input invalid data formats (e.g., invalid phone number, email)."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure validation messages appear specifying input errors."
+      },
+      {
+        "type": "action",
+        "description": "Fill out all required fields with valid information."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that validation errors disappear and the form can be submitted."
       }
     ]
   },
   {
-    "id": "TC011",
-    "title": "Shopping Cart - State Persistence After Navigation",
-    "description": "Ensure that shopping cart state persists correctly when navigating between different pages of the app.",
+    "id": "TC006",
+    "title": "WhatsApp Message Generation and Submission",
+    "description": "Ensure that upon valid pre-order form submission, a correctly formatted WhatsApp message is generated and the user is redirected or prompted appropriately.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Complete the pre-order form with valid user details and items."
+      },
+      {
+        "type": "action",
+        "description": "Submit the pre-order form."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate that the WhatsApp message content includes all order details and user information in the correct format."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the user is redirected to WhatsApp web/app with the pre-filled message successfully."
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Store Location Map Loading and Interactivity",
+    "description": "Verify that the interactive store location map loads correctly, shows the correct store marker, and supports basic map interactions.",
     "category": "functional",
     "priority": "Medium",
     "steps": [
       {
         "type": "action",
-        "description": "Add items to the shopping cart."
-      },
-      {
-        "type": "action",
-        "description": "Navigate to different sections/pages of the app using navigation components."
+        "description": "Navigate to the Location section of the app."
       },
       {
         "type": "assertion",
-        "description": "Verify the shopping cart retains previously added items and quantities on each page."
+        "description": "Confirm the map loads without errors and the store location marker is placed correctly."
+      },
+      {
+        "type": "action",
+        "description": "Interact with the map by zooming in and out."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the map zooms smoothly and marker remains visible at correct location."
+      },
+      {
+        "type": "action",
+        "description": "Drag or pan the map."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the map pans without glitches and the marker is interactive or highlighted when clicked if applicable."
       }
     ]
   },
   {
-    "id": "TC012",
-    "title": "UI - Accessibility Standards Compliance",
-    "description": "Check that all UI components including buttons, navigation, and modals are accessible per WCAG standards (keyboard navigable, with proper ARIA labels).",
+    "id": "TC008",
+    "title": "UI Components Consistency Across Browsers and Screen Sizes",
+    "description": "Check that reusable UI components such as buttons, floating images, and social media links render consistently on major browsers and at various screen sizes.",
     "category": "ui",
     "priority": "Medium",
     "steps": [
       {
         "type": "action",
-        "description": "Attempt to navigate the entire app using keyboard only."
+        "description": "Open the app in latest versions of Chrome, Firefox, Safari, and Edge on desktop."
       },
       {
         "type": "assertion",
-        "description": "Ensure all interactive elements are reachable and operable via keyboard."
+        "description": "Verify that buttons, floating images, and social links appear correctly and respond to hover/focus states as designed."
+      },
+      {
+        "type": "action",
+        "description": "Resize each browser window from mobile widths to desktop widths."
       },
       {
         "type": "assertion",
-        "description": "Validate presence of ARIA attributes on critical UI components to support screen readers."
+        "description": "Check that UI components adapt properly with no layout breaks, remain accessible and visually consistent."
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Shopping Cart Edge Case: Adding Large Quantity and Maximum Storage",
+    "description": "Test how the shopping cart handles adding extremely large quantities of a single item and the persistence limits of local storage.",
+    "category": "error handling",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Add a very large quantity (e.g. 9999) of a single menu item to the cart."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the cart updates correctly without errors and reflects the total price accurately."
+      },
+      {
+        "type": "action",
+        "description": "Reload the application multiple times to test persistence under large data volume."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure cart data persists correctly without corruption or data loss."
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Error Handling for WhatsApp Submission Failure",
+    "description": "Verify the app's behavior when WhatsApp submission fails due to user cancellation or network issues.",
+    "category": "error handling",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Submit a valid pre-order to generate a WhatsApp message."
+      },
+      {
+        "type": "action",
+        "description": "Simulate user cancelling the WhatsApp message sending or simulate network failure."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that the app handles the cancellation or failure gracefully without crashing and offers appropriate user feedback."
       }
     ]
   }
