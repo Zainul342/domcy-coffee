@@ -14,14 +14,12 @@ export const FloatingImage = ({
   className = '',
   removeBackground = false,
 }: FloatingImageProps) => {
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(!removeBackground);
   const [useFallback, setUseFallback] = useState(!removeBackground);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     if (!removeBackground) {
-      setImageLoaded(true);
-      setUseFallback(true);
       return;
     }
 

@@ -40,11 +40,11 @@ vi.mock('framer-motion', async () => {
   const actual = await vi.importActual('framer-motion');
   return {
     ...actual,
-    AnimatePresence: ({ children }: any) => children,
+    AnimatePresence: ({ children }: { children: React.ReactNode }) => children,
     motion: {
-      div: ({ children, ...props }: any) => React.createElement('div', props, children),
-      span: ({ children, ...props }: any) => React.createElement('span', props, children),
-      button: ({ children, ...props }: any) => React.createElement('button', props, children),
+      div: ({ children, ...props }: React.ComponentProps<'div'>) => React.createElement('div', props, children),
+      span: ({ children, ...props }: React.ComponentProps<'span'>) => React.createElement('span', props, children),
+      button: ({ children, ...props }: React.ComponentProps<'button'>) => React.createElement('button', props, children),
     },
   };
 });
