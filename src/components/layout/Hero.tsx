@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { DomcyLogo } from '../ui/DomcyLogo';
 import { FloatingImage } from '../ui/FloatingImage';
 
