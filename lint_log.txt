@@ -1,0 +1,58 @@
+﻿
+> domcy-coffee@0.0.0 lint
+> eslint .
+
+
+C:\Users\User\Documents\VS CODE\domcy-coffee\e2e\comprehensive.spec.ts
+  27:11  warning  'plusBtn' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\User\Documents\VS CODE\domcy-coffee\e2e\order.spec.ts
+  30:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  32:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  48:5  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  51:5  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  55:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  57:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  63:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  66:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  70:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  72:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  78:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  84:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+  88:3  warning  Unexpected console statement. Only these console methods are allowed: warn, error  no-console
+
+C:\Users\User\Documents\VS CODE\domcy-coffee\src\components\layout\ImageStaging.tsx
+  8:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\User\Documents\VS CODE\domcy-coffee\src\components\ui\Button.tsx
+  38:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\User\Documents\VS CODE\domcy-coffee\src\components\ui\FloatingImage.tsx
+  23:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\User\Documents\VS CODE\domcy-coffee\src\components\ui\FloatingImage.tsx:23:7
+  21 |   useEffect(() => {
+  22 |     if (!removeBackground) {
+> 23 |       setImageLoaded(true);
+     |       ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  24 |       setUseFallback(true);
+  25 |       return;
+  26 |     }  react-hooks/set-state-in-effect
+
+C:\Users\User\Documents\VS CODE\domcy-coffee\src\context\CartContext.tsx
+  103:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\User\Documents\VS CODE\domcy-coffee\src\test\setup.ts
+  43:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  45:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  46:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:40  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 22 problems (6 errors, 16 warnings)
+

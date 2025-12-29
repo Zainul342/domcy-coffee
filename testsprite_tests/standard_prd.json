@@ -50,10 +50,7 @@
       {
         "name": "Navigation",
         "description": "Responsive navigation bar with mobile toggle and smooth scrolling.",
-        "files": [
-          "src/components/layout/Navbar.tsx",
-          "src/components/ui/MobileFloatingNav.tsx"
-        ]
+        "files": ["src/components/layout/Navbar.tsx", "src/components/ui/MobileFloatingNav.tsx"]
       },
       {
         "name": "Menu Display",
@@ -77,16 +74,12 @@
       {
         "name": "Order Processing",
         "description": "Handles pre-order logic, user details form, and WhatsApp message generation.",
-        "files": [
-          "src/components/features/PreOrder/PreOrderModal.tsx"
-        ]
+        "files": ["src/components/features/PreOrder/PreOrderModal.tsx"]
       },
       {
         "name": "Location Map",
         "description": "Interactive map showing store location using Leaflet.",
-        "files": [
-          "src/components/features/Location/LocationMap.tsx"
-        ]
+        "files": ["src/components/features/Location/LocationMap.tsx"]
       },
       {
         "name": "UI Components",

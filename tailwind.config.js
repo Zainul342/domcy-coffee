@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -18,9 +15,9 @@ export default {
           status: {
             available: '#10B981',
             limited: '#F59E0B',
-            soldOut: '#EF4444'
-          }
-        }
+            soldOut: '#EF4444',
+          },
+        },
       },
       fontFamily: {
         sans: ['Oswald', 'sans-serif'],
@@ -36,20 +33,20 @@ export default {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
-        }
-      }
+        },
+      },
     },
   },
   plugins: [
     function ({ addUtilities }) {
       addUtilities({
         '.perspective-1000': {
-          'perspective': '1000px',
+          perspective: '1000px',
         },
         'preserve-3d': {
           'transform-style': 'preserve-3d',
         },
-      })
+      });
     },
   ],
-}
+};

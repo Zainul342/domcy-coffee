@@ -6,9 +6,7 @@
   "executionArgs": {
     "projectName": "domcy-coffee",
     "projectPath": "c:\\Users\\User\\Documents\\VS CODE\\domcy-coffee",
-    "testIds": [
-      "TC005"
-    ],
+    "testIds": ["TC005"],
     "additionalInstruction": "1. Use `data-testid=\"add-to-cart-{id}\"` (e.g. `add-to-cart-1` for Nasi Tempong Ayam) to click add buttons.\n2. For Cart/Checkout navigation, use `data-testid=\"checkout-button\"`.\n3. For WhatsApp confirmation, use `data-testid=\"confirm-whatsapp-button\"`.\n4. For form inputs in PreOrderModal, use Placeholders (e.g. \"Nama Lengkap\", \"Nomor WhatsApp\") or name attributes since they don't have testids yet.\nVerify successful addition to cart by checking the cart badge or total price, NOT by expecting an immediate 'Order Confirmation' text (which only appears at the very end).",
     "envs": {
       "API_KEY": "sk-user-Ph_OszVLi--d_IEfLJhzO-Ovgp6GkC-lIhlJA74vy3OosJ_mw9fQT6NALxmjtN37nXfsT2pPZsrZUq5EOaynFGbyqu5xBLPGfvE1dTEQcI2T-e6cF0ykbycwco7N2oua09I"

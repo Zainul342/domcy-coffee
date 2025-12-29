@@ -5,55 +5,55 @@ import { CartProvider } from '../../../context/CartContext';
 
 // Mock FloatingImage as it might have complex animations or dependencies
 vi.mock('../../ui/FloatingImage', () => ({
-    FloatingImage: () => null
+  FloatingImage: () => null,
 }));
 
 describe('MenuItemRow', () => {
-    const defaultProps = {
-        id: 1,
-        name: 'Es Kopi Susu',
-        description: 'Fresh coffee with milk',
-        price: '25k',
-        category: 'kopsu',
-        image: '/test-image.jpg'
-    };
+  const defaultProps = {
+    id: 1,
+    name: 'Es Kopi Susu',
+    description: 'Fresh coffee with milk',
+    price: '25k',
+    category: 'kopsu',
+    image: '/test-image.jpg',
+  };
 
-    it('renders menu item details correctly', () => {
-        render(
-            <CartProvider>
-                <MenuItemRow {...defaultProps} />
-            </CartProvider>
-        );
+  it('renders menu item details correctly', () => {
+    render(
+      <CartProvider>
+        <MenuItemRow {...defaultProps} />
+      </CartProvider>,
+    );
 
-        expect(screen.getByText('Es Kopi Susu')).toBeInTheDocument();
-        expect(screen.getByText('Fresh coffee with milk')).toBeInTheDocument();
-        expect(screen.getByText('25k')).toBeInTheDocument();
-    });
+    expect(screen.getByText('Es Kopi Susu')).toBeInTheDocument();
+    expect(screen.getByText('Fresh coffee with milk')).toBeInTheDocument();
+    expect(screen.getByText('25k')).toBeInTheDocument();
+  });
 
-    it('calls addToCart when clicked', () => {
-        render(
-            <CartProvider>
-                <MenuItemRow {...defaultProps} />
-            </CartProvider>
-        );
+  it('calls addToCart when clicked', () => {
+    render(
+      <CartProvider>
+        <MenuItemRow {...defaultProps} />
+      </CartProvider>,
+    );
 
-        const itemRow = screen.getByText('Es Kopi Susu').closest('div');
-        fireEvent.click(itemRow!);
+    const itemRow = screen.getByText('Es Kopi Susu').closest('div');
+    fireEvent.click(itemRow!);
 
-        // We can verify by checking if the cart would have items, 
-        // but a better way is to mock the context or check state.
-        // For now, checking if it doesn't crash is a start.
-    });
+    // We can verify by checking if the cart would have items,
+    // but a better way is to mock the context or check state.
+    // For now, checking if it doesn't crash is a start.
+  });
 
-    it('shows "Sold Out" and disables button when item is sold out', () => {
-        render(
-            <CartProvider>
-                <MenuItemRow {...defaultProps} isSoldOut={true} />
-            </CartProvider>
-        );
+  it('shows "Sold Out" and disables button when item is sold out', () => {
+    render(
+      <CartProvider>
+        <MenuItemRow {...defaultProps} isSoldOut={true} />
+      </CartProvider>,
+    );
 
-        expect(screen.getByText('Sold Out')).toBeInTheDocument();
-        const button = screen.getByRole('button');
-        expect(button).toBeDisabled();
-    });
+    expect(screen.getByText('Sold Out')).toBeInTheDocument();
+    const button = screen.getByRole('button');
+    expect(button).toBeDisabled();
+  });
 });
