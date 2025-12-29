@@ -29,72 +29,69 @@ export const Hero = () => {
                     style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
                 >
                     Satu-Satunya Cafe Terbaik di Donomulyo
-                    >
-                    Satu-Satunya Cafe Terbaik di Donomulyo
+                </div>
+            </div>
+
+            {/* FLOATING 3D IMAGES - STATIC POSITIONS */}
+
+            {/* Top Left - Nasi Tempong */}
+            <div
+                className="absolute top-[15%] -left-[5%] sm:top-[5%] sm:left-[2%] md:top-[8%] md:left-[5%] w-[48vw] sm:w-[38vw] md:w-[32vw] max-w-[450px] z-20"
+            >
+                <FloatingImage
+                    src="/hero-nasi-transparent.png"
+                    alt="Nasi Tempong"
+                    removeBackground={false}
+                    className="rotate-[-8deg] scale-105" // Added scale for impact
+                />
+            </div>
+
+            {/* Bottom Right - Coffee */}
+            <div
+                className="absolute bottom-[20%] -right-[5%] sm:bottom-[15%] sm:right-[1%] md:bottom-[20%] md:right-[5%] w-[42vw] sm:w-[35vw] md:w-[28vw] max-w-[380px] z-20"
+            >
+                <FloatingImage
+                    src="/hero-coffee-transparent.png"
+                    alt="Coffee"
+                    removeBackground={false}
+                    className="rotate-[8deg] scale-110"
+                />
+            </div>
+
+            {/* Mid Right - Sambal (Detail 1) */}
+            <div
+                className="absolute top-[18%] right-[8%] w-[18vw] max-w-[180px] z-30 hidden lg:block"
+            >
+                <FloatingImage
+                    src="/hero-sambal-transparent.png"
+                    alt="Sambal"
+                    removeBackground={false}
+                    className="rotate-[15deg] scale-110"
+                />
+            </div>
+
+            {/* Bottom Left - Chili (Detail 2) */}
+            <div
+                className="absolute bottom-[20%] left-[12%] w-[12vw] max-w-[120px] z-30 hidden md:block opacity-90"
+            >
+                <FloatingImage
+                    src="/hero-chili-transparent.png"
+                    alt="Chili"
+                    removeBackground={false}
+                    className="rotate-[-10deg] scale-110"
+                />
+            </div>
+
+            {/* Marquee Scroller at bottom */}
+            <div className="absolute bottom-0 w-full bg-domcy-cream text-domcy-green py-3 overflow-hidden z-40 border-t-4 border-domcy-black">
+                <div className="animate-marquee whitespace-nowrap flex gap-12 font-display text-2xl sm:text-3xl uppercase items-center tracking-wider">
+                    <span>★ HIDDEN GEM MALANG SELATAN</span><span className="text-xl">●</span>
+                    <span>LIVE MUSIC SETIAP SABTU</span><span className="text-xl">●</span>
+                    <span>NASI TEMPONG JUARA</span><span className="text-xl">●</span>
+                    <span>WIFI KENCANG & PARKIR LUAS</span><span className="text-xl">●</span>
+                    <span>★ HIDDEN GEM MALANG SELATAN</span>
                 </div>
             </div>
         </div>
-
-            {/* FLOATING 3D IMAGES - STATIC POSITIONS */ }
-
-    {/* Top Left - Nasi Tempong */ }
-    <div
-        className="absolute top-[15%] -left-[5%] sm:top-[5%] sm:left-[2%] md:top-[8%] md:left-[5%] w-[48vw] sm:w-[38vw] md:w-[32vw] max-w-[450px] z-20"
-    >
-        <FloatingImage
-            src="/hero-nasi-transparent.png"
-            alt="Nasi Tempong"
-            removeBackground={false}
-            className="rotate-[-8deg] scale-105" // Added scale for impact
-        />
-    </div>
-
-    {/* Bottom Right - Coffee */ }
-    <div
-        className="absolute bottom-[20%] -right-[5%] sm:bottom-[15%] sm:right-[1%] md:bottom-[20%] md:right-[5%] w-[42vw] sm:w-[35vw] md:w-[28vw] max-w-[380px] z-20"
-    >
-        <FloatingImage
-            src="/hero-coffee-transparent.png"
-            alt="Coffee"
-            removeBackground={false}
-            className="rotate-[8deg] scale-110"
-        />
-    </div>
-
-    {/* Mid Right - Sambal (Detail 1) */ }
-    <div
-        className="absolute top-[18%] right-[8%] w-[18vw] max-w-[180px] z-30 hidden lg:block"
-    >
-        <FloatingImage
-            src="/hero-sambal-transparent.png"
-            alt="Sambal"
-            removeBackground={false}
-            className="rotate-[15deg] scale-110"
-        />
-    </div>
-
-    {/* Bottom Left - Chili (Detail 2) */ }
-    <div
-        className="absolute bottom-[20%] left-[12%] w-[12vw] max-w-[120px] z-30 hidden md:block opacity-90"
-    >
-        <FloatingImage
-            src="/hero-chili-transparent.png"
-            alt="Chili"
-            removeBackground={false}
-            className="rotate-[-10deg] scale-110"
-        />
-    </div>
-
-    {/* Marquee Scroller at bottom */ }
-    <div className="absolute bottom-0 w-full bg-domcy-cream text-domcy-green py-3 overflow-hidden z-40 border-t-4 border-domcy-black">
-        <div className="animate-marquee whitespace-nowrap flex gap-12 font-display text-2xl sm:text-3xl uppercase items-center tracking-wider">
-            <span>★ HIDDEN GEM MALANG SELATAN</span><span className="text-xl">●</span>
-            <span>LIVE MUSIC SETIAP SABTU</span><span className="text-xl">●</span>
-            <span>NASI TEMPONG JUARA</span><span className="text-xl">●</span>
-            <span>WIFI KENCANG & PARKIR LUAS</span><span className="text-xl">●</span>
-            <span>★ HIDDEN GEM MALANG SELATAN</span>
-        </div>
-    </div>
-        </div >
     );
 };
