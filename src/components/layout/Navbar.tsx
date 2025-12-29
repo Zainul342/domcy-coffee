@@ -204,7 +204,7 @@ export const Navbar = () => {
                                 <div className="p-6 bg-domcy-green/5 flex justify-between items-center text-domcy-green">
                                     <div className="flex gap-4">
                                         <span className="font-sans font-bold uppercase tracking-wider text-xs opacity-60">Follow Us</span>
-                                        <a href="#" className="hover:scale-110 transition-transform"><Instagram className="w-5 h-5" /></a>
+                                        <a href="https://www.instagram.com/domcycoffee" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform"><Instagram className="w-5 h-5" /></a>
                                     </div>
                                 </div>
                             </div>

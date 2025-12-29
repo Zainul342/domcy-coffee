@@ -68,7 +68,7 @@ export const Footer = () => {
                         className="p-6 flex flex-col items-center justify-center hover:bg-domcy-green hover:text-domcy-cream transition-colors group"
                     >
                         <span className="font-display text-2xl uppercase mb-1 group-hover:scale-105 transition-transform">Find Us</span>
-                        <span className="font-sans text-xs font-bold uppercase tracking-wider opacity-60 group-hover:opacity-80">Donomulyo, Malang</span>
+                        <span className="font-sans text-xs font-bold uppercase tracking-wider opacity-60 group-hover:opacity-80">Dawung, Donomulyo</span>
                     </Link>
 
                 </div>

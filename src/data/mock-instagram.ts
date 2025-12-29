@@ -9,44 +9,44 @@ export interface InstagramPost {
 export const instagramPosts: InstagramPost[] = [
     {
         id: 1,
-        image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=600&auto=format&fit=crop",
-        caption: "Friday vibes at Domcy! ☕✨ Siapa yang udah siap weekend-an? #DomcyCoffee #MalangHits",
+        image: "/images/instagram/feed-1.png",
+        caption: "Suasana malam di Kopi Donomulyo. Tempat ternyaman buat sharing cerita. ☕✨ #DomcyCoffee #MalangHits",
         likes: 124,
-        link: "https://instagram.com"
+        link: "https://instagram.com/domcycoffee"
     },
     {
         id: 2,
-        image: "https://images.unsplash.com/photo-1529156349544-6663ce951478?q=80&w=600&auto=format&fit=crop",
-        caption: "Nasi Tempong Ayam + Es Teh = Perfect Combo 🔥 Pedesnya bikin nagih! #KulinerMalang #Pedas",
-        likes: 89,
-        link: "https://instagram.com"
+        image: "/images/instagram/feed-2.png",
+        caption: "Latte art crafted with passion. Coffee that tastes as good as it looks. ☕🎨 #LatteArt #Domcy",
+        likes: 189,
+        link: "https://instagram.com/domcycoffee"
     },
     {
         id: 3,
-        image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop",
-        caption: "Live Music tonight starting at 7 PM! Don't miss out 🎸🎤 #LiveMusicMalang #NongkrongAsik",
+        image: "/images/instagram/feed-3.png",
+        caption: "Interior baru dengan balutan aksen kayu dan industrial. Mewah tapi tetap 'ndeso' (lokal). 🌿🪵 #InteriorCafe #Donomulyo",
         likes: 215,
-        link: "https://instagram.com"
+        link: "https://instagram.com/domcycoffee"
     },
     {
         id: 4,
-        image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600&auto=format&fit=crop",
-        caption: "Ngopi santai sambil ngerjain tugas? Gas ke Domcy aja, WiFi kenceng! 💻☕ #StudyCafe #WorkFromCafe",
+        image: "/images/instagram/feed-4.png",
+        caption: "Nasi Tempong legendaris Domcy. Pedasnya nendang, lauknya komplit! 🔥🍱 #NasiTempong #KulinerMalang",
         likes: 156,
-        link: "https://instagram.com"
+        link: "https://instagram.com/domcycoffee"
     },
     {
         id: 5,
-        image: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=600&auto=format&fit=crop",
-        caption: "Our signature Domcy Aren Latte. Creamy, sweet using real gula aren. 🌴 #KopiSusuGulaAren",
+        image: "/images/instagram/feed-5.png",
+        caption: "Ayam Geprek sambal bawang. Jagonya bikin gagal diet! 😂🍗 #AyamGeprek #DomcyFood",
         likes: 178,
-        link: "https://instagram.com"
+        link: "https://instagram.com/domcycoffee"
     },
     {
         id: 6,
-        image: "https://images.unsplash.com/photo-1542181961-9523d76bd785?q=80&w=600&auto=format&fit=crop",
-        caption: "Full house last night! Thank you for coming everyone! See you again soon 👋 #DomcyCommunity",
+        image: "/images/instagram/feed-6.png",
+        caption: "Vietnam Drip, pilihan tepat buat yang suka kopi strong. ☕⏳ #VietnamDrip #KopiHitam",
         likes: 243,
-        link: "https://instagram.com"
+        link: "https://instagram.com/domcycoffee"
     }
 ];

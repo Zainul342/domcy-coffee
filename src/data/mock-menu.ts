@@ -28,7 +28,7 @@ export const menuItems: MenuItem[] = [
         name: 'Es Teh',
         description: 'Teh manis dingin segar.',
         price: 4000,
-        image: '/images/menu/es-teh.svg',
+        image: '/images/menu/es-teh.png',
         featured: false,
         tags: []
     },
@@ -150,7 +150,7 @@ export const menuItems: MenuItem[] = [
         name: 'Vietnam Drip Original',
         description: 'Kopi hitam pekat metode drip. Bold.',
         price: 7000,
-        image: '/images/menu/vietnam-drip-original.svg',
+        image: '/images/menu/vietnam-drip.png',
         featured: false,
         tags: []
     },
@@ -160,7 +160,7 @@ export const menuItems: MenuItem[] = [
         name: 'Vietnam Drip Susu',
         description: 'Kopi drip dengan susu kental manis.',
         price: 8000,
-        image: '/images/menu/vietnam-drip-susu.svg',
+        image: '/images/menu/vietnam-drip.png',
         featured: true,
         tags: ['best-seller']
     },
@@ -333,7 +333,7 @@ export const menuItems: MenuItem[] = [
         name: 'Red Velvet Milkshake',
         description: 'Blend red velvet premium, susu, dan es krim.',
         price: 15000,
-        image: '/images/menu/red-velvet-milkshake.svg',
+        image: '/images/menu/red-velvet-milkshake.png',
         featured: true,
         tags: ['signature', 'sweet']
     },
@@ -518,7 +518,7 @@ export const menuItems: MenuItem[] = [
         name: 'Ayam Geprek',
         description: 'Ayam crispy digeprek sambal bawang pedas + Nasi & Lalapan.',
         price: 13000,
-        image: '/images/menu/ayam-geprek.svg',
+        image: '/images/menu/ayam-geprek.png',
         featured: true,
         tags: ['best-seller', 'spicy']
     },
@@ -528,7 +528,7 @@ export const menuItems: MenuItem[] = [
         name: 'Nasi Tempong',
         description: 'Nasi dengan lauk lengkap (ikan asin, tempe, tahu) & sambal tempong khas.',
         price: 15000,
-        image: '/images/menu/nasi-tempong.svg',
+        image: '/images/menu/nasi-tempong.png',
         featured: true,
         tags: ['signature', 'spicy']
     },
